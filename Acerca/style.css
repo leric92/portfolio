@@ -1,0 +1,6334 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+        background-color: #000;
+}
+
+
+
+header {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(12, 1fr);
+    height: 15vh;
+    background-color: #2D2D32;
+}
+
+header a.logo {
+    grid-area: 1 / 2 / 4 / 3;
+    color: #fff;
+    font-size: 1.3rem;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    list-style: none;
+    text-decoration: none;
+}
+
+header nav {
+    grid-area: 1 / 6 / 3 / 12;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+
+
+.hero {
+    display: grid;
+    grid-template: repeat(15, 1fr) / repeat(12, 1fr);
+    background-color: #2D2D32;
+}
+
+
+.hero .divide-one {
+    grid-area: 2 / 2 / 4 / 12;
+    position: relative;
+    top: 40px;
+}
+
+.hero .divide-mobile {
+    display: none;
+}
+
+.hero .divide-one h1 {
+    font-size: 3rem;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.hero .divide-one-two {
+    grid-area: 5 / 6 / 7 / 9;
+    position: relative;
+    bottom: 35px;
+    height: 16vh;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .divide-one-two h1 {
+    font-size: 3rem;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+}
+
+.hero .divide-one-three {
+    grid-area: 7 / 6 / 9 / 12;
+}
+
+.hero .divide-one-three h1 {
+    font-size: 3rem;
+    line-height: 8.2rem;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero .divide-one-four {
+    grid-area: 9 / 6 / 11 / 12;
+    position: relative;
+    top: 30px;
+}
+
+.hero .divide-one-four h1 {
+    font-size: 3rem;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.hero .divide-one-five {
+    grid-area: 12 / 2 / 14 / 8;
+    position: relative;
+    top: 30px;
+}
+
+.hero .divide-one-five h1 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 0.28rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.hero img.kid {
+    grid-area: 3 / 2 / 11 / 6;
+    background: #E39B3F;
+    position: relative;
+    top: 110px;
+    left: 20px;
+    border-radius: 101px;
+    width: 370px;
+    height: 385px;
+    transform: rotate(17deg);
+}
+
+.hero img.grape {
+    grid-area: 4 / 11 / 8 / 13;
+    align-self: center;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 10px;
+}
+
+.hero .divide-two {
+    grid-area: 12 / 8 / 14 / 12;
+    align-self: center;
+}
+
+.hero .divide-two h6 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: normal;
+    text-align: justify;
+    color: #fff;
+}
+
+.hero .button {
+    grid-area: 5 / 9 / 7 / 11;
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero .button button {
+    padding: 5px;
+    background: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+}
+
+
+.first-call-to-action {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+    overflow: hidden;
+    background-color: #2D2D32;
+}
+
+.rectangle-background {
+    grid-area: 5 / 1 / 7 / 13;
+    width: 100%;
+    height: 100%;
+    background-color: #3340D9;
+}
+
+.try-out-one {
+    grid-area: 2 / 1 / 6 / 13;
+    display: flex;
+    justify-content: space-evenly;
+    height: 28vh;
+    transform: rotate(-2deg);
+    width: 1500px;
+    position: relative;
+    right: 10px;
+    align-items: center;
+    background-color: #C2EB3A;
+}
+
+.try-out-one h5 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+
+}
+
+
+
+.try-out-one img.lemon {
+    width: 140px;
+    height: 130px;
+}
+
+
+
+
+
+
+
+.service {
+    display: grid;
+    grid-template: repeat(20, 1fr) / repeat(12, 1fr);
+    background-color: #3340D9;
+}
+
+.service .offer {
+    grid-area: 4 / 2 / 8 / 12;
+}
+
+.service .offer h4 {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #fff;
+    line-height: 4rem;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+
+.service img {
+    grid-area: 11 / 6 / 19 / 12;
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+
+
+.work-education {
+    display: grid;
+    grid-template: repeat(23, 1fr) / repeat(12, 1fr);
+    background: linear-gradient(#3340D9, #DB563B);
+}
+
+.work-education .who {
+    grid-area: 4 / 2 / 7 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.work-education .who button{
+    width: 25%;
+    background: none;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-size: 0.65rem;
+    padding: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.work-education .who h4 {
+    font-size: 0.8rem;
+    width: 60%;
+    text-align: justify;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.work-education .bullets {
+    grid-area: 3 / 9 / 11 / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work-education .bullets .vision button{ 
+    width: 30%;
+    background: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.work-education .bullets .vision p {
+    padding-top: 20px;
+    font-size: 0.8rem;
+    text-align: justify;
+    color: #fff;
+}
+
+.work-education .bullets .impact button{ 
+    width: 30%;
+    background: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.work-education .bullets .impact p {
+    padding-top: 20px;
+    font-size: 0.8rem;
+    text-align: justify;
+    color: #fff;
+}
+
+.work-education .bullets .develop button{ 
+    width: 70%;
+    background: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.work-education .bullets .develop p {
+    padding-top: 20px;
+    font-size: 0.8rem;
+    text-align: justify;
+    color: #fff;
+}
+
+.work-education .pineaple-soda{
+    grid-area: 9 / 3 / 24 / 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-education .pineaple-soda img.pineaple{
+    width: 100%;
+    height:100%;
+    z-index: 1;
+}
+
+
+.work-education .years {
+    grid-area: 14 / 2 / 21 / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.work-education .years .university {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #fff;
+    padding: 20px;
+}
+
+.work-education .years .university h3 {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.work-education .years .university h4 {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.work-education .years .master {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #fff;
+}
+.work-education .years .master h3 {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.work-education .years .master h4 {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: normal;
+    text-align: justify;
+}
+.work-education .years .dev-ed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #fff;
+}
+
+.work-education .years .dev-ed h3 {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.work-education .years .dev-ed h4 {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.work-education .years .canada {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #fff;
+}
+
+.work-education .years .canada h3 {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.work-education .years .canada h4 {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.work-education .years .codecademy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     padding: 20px;
+    border-top: 1px solid #fff;
+}
+
+.work-education .years .codecademy h3 {
+    font-size: 0.9rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.work-education .years .codecademy h4 {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+
+.line-eight {
+    grid-area: 1 / 2 / 24 / 3;
+    width: 1px;
+    height: 100%;
+    justify-self: center;
+    opacity: 15%;
+    background: #fff;
+}
+
+.line-nine {
+    grid-area: 1 / 11 / 24 / 12;
+    width: 1px;
+    height: 100%;
+    justify-self: center;
+    opacity: 15%;
+    background: #fff;
+}
+
+.line-teen {
+    grid-area: 1 / 5 / 24 / 6;
+    width: 1px;
+    height: 100%;
+    justify-self: center;
+    opacity: 15%;
+    background: #fff;
+}
+
+.problem {
+    display: grid;
+    grid-template: repeat(43, 1fr) / repeat(12, 1fr);
+    background-color: #DB563B;
+}
+
+
+
+.problem-intro {
+    grid-area: 3 / 2 / 8 / 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.problem-intro h3 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-align: justify;
+    width: 65%;
+    color: #fff;
+}
+
+.problem-intro button {
+    height: 20%;
+    width: 15%;
+    background: none;
+    border-bottom: none;
+    border-top: none;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    color: #fff;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.problem-text {
+    grid-area: 13 / 6 / 36 / 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.problem-text-mobile {
+    display: none;
+}
+
+.problem-text p {
+    font-size: 0.7rem;
+    text-align: justify;
+    line-height: 0.9rem;
+    width: 70%;
+    color: #fff;
+    font-weight: 100;
+}
+
+.problem-bullets {
+    grid-area: 13 / 9 / 35 / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.problem-bullets .job-bags {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    border-left: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+}
+
+.problem-bullets .job-bags h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.problem-bullets .job-bags h6 {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.problem-bullets .aplications {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    border-left: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+}
+
+.problem-bullets .aplications h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.problem-bullets .aplications h6 {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.problem-bullets .rejections {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25%;
+    border-left: 1.5px solid #fff;
+    border-right: 1.5px solid #fff;
+}
+
+.problem-bullets .rejections h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.problem-bullets .rejections h6 {
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.second-call-to-action {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+    overflow: hidden;
+    background-color: #DB563B;
+}
+
+.rectangle-background-two {
+    grid-area: 5 / 1 / 7 / 13;
+    width: 100%;
+    height: 100%;
+    background-color: #A89BB5;
+}
+
+.try-out-two {
+    grid-area: 2 / 1 / 6 / 13;
+    display: flex;
+    justify-content: space-evenly;
+    height: 28vh;
+    transform: rotate(-2deg);
+    width: 1500px;
+    position: relative;
+    right: 10px;
+    align-items: center;
+    background-color: #C2EB3A;
+}
+
+.try-out-two h5 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+
+}
+
+.try-out-two img.lemon-two {
+    width: 140px;
+    height: 130px;
+}
+
+
+.learning {
+    display: grid;
+    grid-template: repeat(60, 1fr) / repeat(12, 1fr);
+    background-color: #A89BB5;
+}
+
+.learning-one {
+    grid-area: 6 / 2 / 26 / 7;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    z-index: 1;
+}
+
+.learning-one h2 {
+    width: 75%;
+    text-align: justify;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 0.9px;
+    transition: all 2s ease-in;
+}
+
+.learning-one:hover {
+    background-color: #C2EB3A;
+    border: 1px solid #C2EB3A;
+}
+
+.learning-one:hover h2 {
+    color: #000;
+}
+
+
+.learning-two {
+    grid-area: 6 / 7 / 26 / 12;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 2s ease-in-out;
+    z-index: 1;
+}
+
+.learning-two .title-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.learning-two .title-img h3 {
+    width: 60%;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: justify;
+    letter-spacing: 2px;
+    color: #000;
+
+}
+
+.learning-two .title-img img.arrow {
+    width: 40%;
+    height: 50%;
+}
+
+.learning-two p {
+    font-size: 0.7rem;
+    color: #000;
+    text-align: justify;
+    line-height: 1.2rem;
+    width: 90%;
+}
+
+.learning-two:hover {
+    background-color: #C2EB3A;
+    border: 1px solid #C2EB3A;
+}
+
+.learning-two:hover p {
+    color: #000;
+}
+
+.learning-two:hover h3 {
+    color: #000;
+}
+
+
+
+.learning-three {
+    grid-area: 30 / 2 / 50 / 7;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 2s ease-in-out;
+    z-index: 1;
+}
+
+.learning-three .title-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.learning-three .title-img h3 {
+    width: 75%;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #000;
+    text-align: justify;
+}
+
+.learning-three p {
+    font-size: 0.7rem;
+    color: #000;
+    text-align: justify;
+    line-height: 1.2rem;
+    width: 90%;
+}
+
+.learning-three .title-img img.arrow {
+    width: 40%;
+    height: 50%;
+}
+
+
+.learning-three:hover {
+    background-color: #C2EB3A;
+    border: 1px solid #C2EB3A;
+}
+
+.learning-three:hover p {
+    color: #000;
+}
+
+.learning-three:hover h3 {
+    color: #000;
+}
+
+
+.learning-four {
+    grid-area: 30 / 7 / 50 / 12;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 2s ease-in-out;
+    z-index: 1;
+}
+
+.learning-four .title-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20%;
+}
+
+.learning-four .title-img h3 {
+    width: 75%;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #000;
+    text-align: justify;
+}
+
+.learning-four p {
+    font-size: 0.7rem;
+    color: #000;
+    text-align: justify;
+    line-height: 1.2rem;
+    width: 90%;
+}
+
+.learning-four .title-img img.arrow {
+    width: 40%;
+    height: 50%;
+}
+
+.learning-four:hover {
+    background-color: #C2EB3A;
+    border: 1px solid #C2EB3A;
+}
+
+.learning-four:hover p {
+    color: #000;
+}
+
+.learning-four:hover h3 {
+    color: #000;
+}
+
+
+.three-call-to-action {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+    overflow: hidden;
+    background-color: #A89BB5;
+}
+
+.rectangle-background-three {
+    grid-area: 5 / 1 / 7 / 13;
+    width: 100%;
+    height: 100%;
+    background-color: #A89BB5;
+}
+
+.try-out-three {
+    grid-area: 2 / 1 / 6 / 13;
+    display: flex;
+    justify-content: space-evenly;
+    height: 28vh;
+    transform: rotate(-2deg);
+    width: 1500px;
+    position: relative;
+    right: 10px;
+    align-items: center;
+    background-color: #C2EB3A;
+}
+
+.try-out-three h5 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+
+}
+
+.try-out-three img.lemon-three {
+    width: 140px;
+    height: 130px;
+}
+
+
+.job-oportunity {
+    display: grid;
+    grid-template: repeat(50, 1fr) / repeat(12, 1fr);
+    background-color: #A89BB5;
+}
+
+.freelance {
+    grid-area: 10 / 2 / 44 / 7;
+    border: 1px solid #2618D0;
+    background-color: #2618D0;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.freelance h6 {
+    font-size: 0.7rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.freelance h3 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+
+
+.freelance  img {
+    width: 28%;
+    height: 52%;
+}
+
+
+
+.job-offer {
+    grid-area: 10 / 7 / 44 / 12;
+    background-color: #F24026;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.job-offer h6 {
+    font-size: 0.7rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.job-offer h3 {
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+
+
+.job-offer img {
+    width: 28%;
+    height: 52%;
+}
+
+
+.choose-flavour {
+    display: grid;
+    grid-template: repeat(24, 1fr) / repeat(12, 1fr);
+    background-color: #A89BB5;
+}
+
+.rectangle-mobile {
+    display: none;
+}
+
+.choose-flavour img {
+    grid-area: 5 / 4 / 12 / 10;
+    position: relative;
+    top: 24.4px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.flavour-mobile-img {
+    display: none;
+}
+
+.choose-flavour .container-flavour {
+    grid-area: 12 / 2 / 17 / 12;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 119px;
+    z-index: 1;
+}
+
+.choose-flavour .container-flavour-mobile {
+    display: none;
+}
+
+.choose-flavour .container-flavour-mobile-big {
+    display: none;
+}
+
+.choose-flavour .container-flavour h6 {
+    width: 15%;
+    position: relative;
+    left: 30px;
+    text-align: justify;
+}
+
+.choose-flavour .container-flavour h4 {
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.choose-flavour .container-flavour a.service-arrow img {
+    position: relative;
+    top: 5px;
+    width: 35px;
+    height: 40px;
+}
+
+.choose-flavour h2 {
+    grid-area: 17 / 3 / 21 / 11;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    font-size: 3.5rem;
+    letter-spacing: 6px;
+    color: #fff;
+}
+
+
+.contact-form {
+    display: grid;
+    grid-template: repeat(14, 1fr) / repeat(12, 1fr);
+    background-color: #A89BB5;
+}
+
+.container-form {
+    grid-area: 2 / 1 / 12 / 13;
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.contact-form .form-call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    background-color: #2D2D32;
+}
+
+.contact-form .form-call-to-action h4 {
+    padding-left: 10px;
+    width: 70%;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+.contact-form .form-call-to-action p {
+    font-size: 1rem;
+    padding-left: 10px;
+    width: 80%;
+    color: #fff;
+}
+
+.container-form .form-submit {
+    width: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #2D2D32;
+}
+
+
+
+.container-form .form-submit form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    left: 15px;
+}
+
+.contact-form .form-submit form input {
+    padding: 15px;
+    width: 95%;
+    height: 10vh;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.contact-form .form-submit form input.submit {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    width: 30%;
+    background-color: #D3F7F3;
+    cursor: pointer;
+}
+
+.contact-form .form-submit form input.submit:hover {
+    background-color: #E4B722;
+}
+
+
+.footer {
+    display: grid;
+    grid-template: repeat(25, 1fr) / repeat(12, 1fr);
+    background-color: #A89BB5;
+}
+
+.footer .footer-box {
+    grid-area: 2 / 1 / 24 / 13;
+    height: 160vh;
+    background-color: #2D2D32;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .footer-box .footer-container-text{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer .footer-box .footer-container-text h2 {
+    font-size: 4rem;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.footer .footer-box .footer-container-text h6 {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #fff;
+}
+
+
+
+.footer .footer-container-contact-info {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer .footer-container-contact-info h6 {
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+
+
+.footer .footer-container-contact-info p {
+    width: 25%;
+    color: #fff;
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.footer .footer-nav {
+    position: relative;
+    bottom: 30px;
+    left: 50px;
+    width: 90%;
+    height: 10vh;
+}
+
+.footer .footer-nav ul {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer .footer-nav ul li {
+    list-style: none;
+}
+
+.footer .footer-nav ul li a  {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.6rem;
+}
+
+.footer-line-one {
+    grid-area: 21 / 1 / 21 / 13;
+    background-color: #fff;
+    position: relative;
+    left: 60px;
+    width: 90%;
+    height: 2px;
+}
+
+.footer-line-two {
+    grid-area: 17 / 4 / 21 / 4;
+    background-color: #fff;
+    height: 100%;
+    width: 2px;
+}
+
+.footer-line-three {
+    grid-area: 17 / 9 / 21 / 9;
+    background-color: #fff;
+    height: 100%;
+    width: 2px;
+}
+
+
+/*Responsive*/
+@media only screen and (max-width: 1397px) { 
+    .service .offer h4 {
+        font-size: 1.4rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 2.8rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+}
+
+@media only screen and (max-width: 1377px) {
+    .try-out-one img.lemon {
+        position: relative;
+        right: 40px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 90px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 60px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 90px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 40px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 90px;
+    }
+    .freelance {
+        grid-area: 10 / 2 / 44 / 7;
+        border: 1px solid #2618D0;
+        background-color: #2618D0;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .hero .divide h1 span.four {
+        position: relative;
+        left: 120px;
+        letter-spacing: 0.25rem;
+    }
+
+}
+
+@media only screen and (max-width: 1290px) {
+    .try-out-one h5 {
+        position: relative;
+        right: 40px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 120px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 180px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 120px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 40px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 180px;
+    }
+    .try-out-three h5 {
+        position: relative;
+        right: 40px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 120px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 180px;
+    }
+    .freelance {
+        grid-area: 10 / 2 / 44 / 7;
+        border: 1px solid #2618D0;
+        background-color: #2618D0;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+}
+
+
+@media only screen and (max-width: 1262px) {
+    .hero .divide-one h1 {
+        font-size: 2.8rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-two h1 {
+        font-size: 2.8rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+    }
+    .hero .divide-one-three h1 {
+        font-size: 2.8rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-four h1 {
+        font-size: 2.8rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-five h1 {
+        font-size: 2.8rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero img.kid {
+        left: 0px;
+    }
+    .work-education .who button {
+        width: 35%;
+    }
+    .work-education .bullets {
+        grid-area: 2 / 9 / 11 / 12;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .problem-intro h3 {
+        width: 70%;
+    }
+    .problem-text {
+        grid-area: 13 / 5 / 36 / 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .problem-bullets {
+        grid-area: 13 / 9 / 36 / 12;
+    }
+    
+    .problem-bullets .job-bags {
+        width: 110%;
+    }
+    .problem-bullets .aplications {
+        width: 110%;
+    }
+    .problem-bullets .rejections {
+        width: 110%;
+    }
+    .freelance img {
+        width: 28%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 28%;
+        height: 52%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero img.kid {
+        left: -30px;
+    }
+    .hero .divide-one h1 {
+        font-size: 2.6rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-two h1 {
+        font-size: 2.6rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+    }
+    .hero .divide-one-three h1 {
+        font-size: 2.6rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-four h1 {
+        font-size: 2.6rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-five h1 {
+        font-size: 2.6rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 80px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 140px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 220px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 140px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 80px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 220px;
+    }
+    .try-out-three h5 {
+        position: relative;
+        right: 60px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 140px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 220px;
+    }
+}
+
+@media only screen and (max-width: 1165px) {
+    .hero img.kid {
+        width: 340px;
+        height: 375px;
+    }
+    .work-education .who {
+        grid-area: 4 / 2 / 7 / 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .work-education .bullets {
+        grid-area: 2 / 8 / 11 / 12;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .work-education img.pineaple {
+        position: relative;
+        right: 20px;
+    }
+    .learning-one {
+        grid-area: 6 / 1 / 26 / 7;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px;
+        z-index: 1;
+    }
+    .learning-two {
+        grid-area: 6 / 7 / 26 / 13;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 1;
+    }
+    .learning-three {
+        grid-area: 30 / 1 / 50 / 7;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 1;
+    }
+    .learning-four {
+        grid-area: 30 / 7 / 50 / 13;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    .try-out-one h5 {
+        font-size: 2.6rem;
+        font-weight: 600;
+        letter-spacing: 6px;
+    }
+    .try-out-two h5 {
+        font-size: 2.6rem;
+        font-weight: 600;
+        letter-spacing: 6px;
+    }
+    .try-out-three h5 {
+        font-size: 2.6rem;
+        font-weight: 600;
+        letter-spacing: 6px;
+    }
+}
+
+@media only screen and (max-width: 1155px) {
+    .choose-flavour h2 {
+        font-size: 3.2rem;
+        letter-spacing: 6px;
+    }
+    .choose-flavour .container-flavour h6 {
+        width: 30%;
+        position: relative;
+        left: 10px;
+        text-align: justify;
+    }
+    .problem-bullets .job-bags h1 {
+        font-size: 3.6rem;
+        letter-spacing: 1.5px;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 3.6rem;
+        letter-spacing: 1.5px;
+    }
+    .problem-bullets .rejections h1 {
+        font-size: 3.6rem;
+        letter-spacing: 1.5px;
+    }
+    .freelance img {
+        width: 30%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 30%;
+        height: 52%;
+    }
+
+
+}
+
+@media only screen and (max-width: 1130px) {
+    .try-out-one h5 {
+        position: relative;
+        right: 80px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 180px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 280px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 180px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 80px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 280px;
+    }
+    .try-out-three h5 {
+        position: relative;
+        right: 90px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 160px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 280px;
+    }
+}
+
+@media only screen and (max-width: 1115px) {
+    .contact-form .form-call-to-action h4 {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .hero img.kid {
+        left: -30px;
+    }
+    .hero .divide-one h1 {
+        font-size: 2.4rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-two h1 {
+        font-size: 2.4rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+    }
+    .hero .divide-one-three h1 {
+        font-size: 2.4rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-four h1 {
+        font-size: 2.4rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-five h1 {
+        font-size: 2.4rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-two h6 {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: normal;
+        color: #fff;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        width: 70%;
+        font-size: 2.3rem;
+        font-weight: normal;
+        color: #fff;
+    }
+
+}
+
+@media only screen and (max-width: 1084px) {
+    .freelance img {
+        width: 32%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 32%;
+        height: 52%;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .problem-bullets .job-bags h1 {
+        font-size: 3.4rem;
+        letter-spacing: 1.3px;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 3.4rem;
+        letter-spacing: 1.3px;
+    }
+    .problem-bullets .rejections h1 {
+        font-size: 3.4rem;
+        letter-spacing: 1.3px;
+    }
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1066px) {
+    .try-out-one h5 {
+        position: relative;
+        right: 90px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 230px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 340px;
+    }
+
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 230px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 100px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 340px;
+    }
+    .try-out-three h5 {
+        position: relative;
+        right: 100px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 230px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 340px;
+    }
+    .choose-flavour h2 {
+        font-size: 3.1rem;
+        letter-spacing: 5.7px;
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+    .hero {
+        display: grid;
+        grid-template: repeat(20, 1fr) / repeat(12, 1fr);
+        background-color: #2D2D32;
+    }
+    .hero img.kid {
+        grid-area: 3 / 2 / 17 / 11;
+        overflow: hidden;
+        background: #E39B3F;
+        position: relative;
+        top: 50px;
+        left: 10px;
+        border-radius: 101px;
+        width: 110%;
+        height: 600px;
+        opacity: 0.2;
+        transform: rotate(17deg);
+    }
+    .hero .divide-one {
+        grid-area: 1 / 2 / 4 / 12;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .hero .divide-one-two {
+        grid-area: 6 / 7 / 9 / 11;
+        position: relative;
+        bottom: 21px;
+        z-index: 1;
+    }
+    .hero .divide-one-three {
+        grid-area: 9 / 2 / 12 / 12;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        z-index: 1;
+    }
+    .hero .divide-one-four{
+        grid-area: 12 / 2 / 15 / 12;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 1;
+    }
+    .hero .divide-one-five {
+        grid-area: 16 / 7 / 19 / 13;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 1;
+    }
+    .hero img.grape {
+        grid-area: 10 / 10 / 15 / 12;
+        width: 200px;
+        height: 200px;
+    }
+    .hero .divide-two {
+        grid-area: 17 / 2 / 19 / 6;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 1;
+    }
+    .hero .divide-two h6 {
+        font-size: 0.9rem;
+        line-height: 2rem;
+        font-weight: normal;
+        color: #fff;
+    }
+    .hero .button {
+        grid-area: 6 / 2 / 9 / 6;
+    }
+    .hero .button button {
+        width: 70%;
+    }
+    .service .offer {
+        grid-area: 3 / 2 / 9 / 12;
+    }
+    .service .offer h4 {
+        font-size: 1.2rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 2.6rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .service img {
+        grid-area: 10 / 2 / 18 / 12;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+    .work-education {
+        display: grid;
+        grid-template: repeat(42, 1fr) / repeat(12, 1fr);
+        background: linear-gradient(#3340D9, #DB563B);
+    }
+    .work-education .who {
+        grid-area: 3 / 2 / 6 / 12;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .work-education .who button{
+        width: 20%;
+        background: none;
+        border-bottom: none;
+        border-top: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.65rem;
+        padding: 5px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .work-education .who h4 {
+        font-size: 1.2rem;
+        width: 50%;
+        text-align: justify;
+        color: #fff;
+        font-weight: lighter;
+    }
+
+    .work-education .bullets {
+        grid-area: 8 / 2 / 22 / 12;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .work-education .bullets .vision {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 25vh;
+    }
+    .work-education .bullets .vision button {
+        width: 25%;
+        height: 20%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .vision p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 1rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .work-education .bullets .impact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 25vh;
+    }
+
+    .work-education .bullets .impact button{ 
+        width: 25%;
+        height: 20%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .impact p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 1rem;
+        text-align: justify;
+        color: #fff;
+    }
+
+    .work-education .bullets .develop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 25vh;
+    }
+    .work-education .bullets .develop button{ 
+        width: 25%;
+        height: 20%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .develop p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 1rem;
+        text-align: justify;
+        color: #fff;
+    }
+
+
+
+    .work-education .pineaple-soda{
+        grid-area: 25 / 4 / 45 / 9;
+        position: relative;
+        left: 0px;
+        width: 110%;
+        height: 85%;
+        opacity: 0.4;
+    }
+
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .work-education .years {
+        grid-area: 24 / 2 / 41 / 12;
+        z-index: 1;
+    }
+    .problem {
+        display: grid;
+        grid-template: repeat(45, 1fr) / repeat(12, 1fr);
+        background-color: #DB563B;
+    }
+    .problem-intro h3 {
+        font-size: 1.5rem;
+    }
+    .problem-text {
+        display: none;
+    }
+
+    .problem-text-mobile {
+        display: block;
+        grid-area: 36 / 2 / 44 / 12;
+    }
+
+    .problem-text-mobile p {
+        font-size: 1.1rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 2.5rem;
+        width: 100%;
+        color: #fff;
+        font-weight: 100;
+    }
+
+
+    .problem-bullets {
+        grid-area: 10 / 2 / 34 / 12;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .problem-bullets .job-bags {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        border-left: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+    }
+    .problem-bullets .job-bags h1 {
+        font-size: 6rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 30px;
+    }
+    .problem-bullets .job-bags h6 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 30px;
+    }
+    .problem-bullets .aplications {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        border-left: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 6rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 30px;
+    }
+    .problem-bullets .aplications h6 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 30px;
+    }
+    .problem-bullets .rejections {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        border-left: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+    }
+    .problem-bullets .rejections h1 {
+        font-size: 6rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 30px;
+    }
+    .problem-bullets .rejections h6 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 30px;
+    }
+    
+
+
+
+}
+
+@media only screen and (max-width: 1031px) {
+    .freelance {
+        grid-area: 10 / 1 / 45 / 7;
+        padding-left: 10px;
+        margin-left: 10px;
+        border: 1px solid #2618D0;
+        background-color: #2618D0;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+    .freelance img {
+        width: 29%;
+        height: 52%;
+    }
+    .job-offer {
+        grid-area: 10 / 7 / 45 / 13;
+        padding-right: 10px;
+        margin-right: 10px;
+        background-color: #F24026;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+    .job-offer img {
+        width: 29%;
+        height: 52%;
+    }
+
+    .choose-flavour h2 {
+        font-size: 3rem;
+        letter-spacing: 5.5px;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        width: 70%;
+        font-size: 2.1rem;
+        font-weight: normal;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .contact-form .form-call-to-action h4 {
+        padding-left: 40px;
+        font-size: 3rem;
+    }
+    .contact-form .form-call-to-action p {
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .problem-intro h3 {
+        font-size: 1.3rem;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 130px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 250px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 360px;
+    }
+
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 250px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 130px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 360px;
+    }
+    .try-out-three h5 {
+        position: relative;
+        right: 130px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 250px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 360px;
+    }
+    .choose-flavour h2 {
+        font-size: 2.8rem;
+        letter-spacing: 5.3px;
+    }
+} 
+
+@media only screen and (max-width: 980px) {
+    .try-out-one h5 {
+        position: relative;
+        right: 140px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 300px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 440px;
+    }
+
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 300px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 140px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 440px;
+    }
+    .try-out-three h5 {
+        position: relative;
+        right: 140px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 300px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 440px;
+    }
+    .try-out-one h5 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+    .try-out-two h5 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+    .try-out-three h5 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+}
+
+@media only screen and (max-width: 963px) {
+    .work-education .bullets .develop button {
+        width: 30%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .choose-flavour .container-flavour {
+        grid-area: 12 / 1 / 17 / 13;
+        background-color: #fff;
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 119px;
+        z-index: 1;
+    }
+    .choose-flavour img.medium {
+        grid-area: 4 / 3 / 12 / 11;
+        position: relative;
+        top: 24.4px;
+        width: 100%;
+        height: 42vh;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .work-education .bullets .vision p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 0.9rem;
+        text-align: justify;
+        color: #fff;
+    }
+
+    .work-education .bullets .impact p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 0.9rem;
+        text-align: justify;
+        color: #fff;
+    }
+
+    .work-education .bullets .develop p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 0.9rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .learning {
+        display: grid;
+        grid-template: repeat(94, 1fr) / repeat(12, 1fr);
+        background-color: #A89BB5;
+    }
+    .learning-one {
+        grid-area: 6 / 2 / 26 / 12;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px;
+        z-index: 1;
+    }
+    .learning-one h2 {
+        width: 75%;
+        text-align: justify;
+        color: #000;
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.8rem;
+        letter-spacing: 0.9px;
+        transition: all 2s ease-in;
+    }
+    .learning-two {
+        grid-area: 28 / 2 / 48 / 12;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 1;
+    }
+    .learning-two .title-img h3 {
+        width: 60%;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #000;
+    }
+    .learning-two p {
+        font-size: 0.9rem;
+        color: #000;
+        text-align: justify;
+        line-height: 1.2rem;
+        width: 90%;
+    }
+    .learning-three {
+        grid-area: 50 / 2 / 70 / 12;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 1;
+    }
+    .learning-three .title-img h3 {
+        width: 75%;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #000;
+    }
+    .learning-three p {
+        font-size: 0.9rem;
+        color: #000;
+        text-align: justify;
+        line-height: 1.2rem;
+        width: 90%;
+    }
+
+
+    .learning-four {
+        grid-area: 72 / 2 / 92 / 12;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 1;
+    }
+    .learning-four .title-img h3 {
+        width: 75%;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #000;
+    }
+    .learning-four p {
+        font-size: 0.9rem;
+        color: #000;
+        text-align: justify;
+        line-height: 1.2rem;
+        width: 90%;
+    }
+    .job-oportunity {
+        display: grid;
+        grid-template: repeat(83, 1fr) / repeat(12, 1fr);
+        background-color: #A89BB5;
+    }
+    
+    .freelance {
+       grid-area: 7 / 2 / 41 / 12;
+       border: 1px solid #2618D0;
+       background-color: #2618D0;
+       padding-left: 0px;
+       height: 93vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 1;
+    }    
+    .freelance img {
+        width: 19%;
+        height: 52%;
+    }
+    .freelance h6 {
+        font-size: 0.9rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .freelance h3 {
+        color: #fff;
+        font-weight: normal;
+        font-size: 1.8rem;
+        letter-spacing: 4px;
+    }
+    .job-offer h6 {
+        font-size: 0.9rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .job-offer h3 {
+        color: #fff;
+        font-weight: normal;
+        font-size: 1.8rem;
+        letter-spacing: 4px;
+    }
+
+    .job-offer {
+        grid-area: 46 / 2 / 80 / 12;
+        background-color: #F24026;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+    .job-offer img {
+        width: 19%;
+        height: 52%;
+    }
+    .contact-form {
+        display: grid;
+        grid-template: repeat(24, 1fr) / repeat(12, 1fr);;
+    }
+    .container-form {
+        grid-area: 2 / 1 / 23 / 13;
+        flex-direction: column;
+        height: 200vh;
+        overflow: hidden;
+    }
+    .contact-form .form-call-to-action {
+        width: 100%;
+        height: 90vh;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 40px;
+        font-size: 3rem;
+    }
+    
+    .contact-form .form-call-to-action p {
+        padding-left: 40px;
+    }
+    .container-form .form-submit {
+        width: 100%;
+        height: 100vh;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+} 
+
+
+@media only screen and (max-width: 935px) {
+    .hero .divide-one h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-two h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+    }
+    .hero .divide-one-three h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-four h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-five h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-two h6 {
+        font-size: 0.85rem;
+    }
+    .choose-flavour h2 {
+        font-size: 2.6rem;
+        letter-spacing: 5px;
+    }
+    .footer .footer-container-contact-info p {
+        width: 25%;
+        color: #fff;
+        text-align: justify;
+        font-size: 0.8rem;
+    }
+} 
+
+@media only screen and (max-width: 900px) {
+    .choose-flavour {
+        display: grid;
+        grid-template: repeat(80, 1fr) / repeat(12, 1fr);
+        background-color: #A89BB5;
+    }
+    .rectangle-mobile {
+        display: block;
+        grid-area: 2 / 1 / 74 / 13;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 70px;
+    }
+    .choose-flavour img.medium {
+        display: none;
+    }
+    .flavour-mobile-img {
+        grid-area: 13 / 6 / 63 / 12;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .flavour-mobile-one {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-one img{
+        width: 30%;
+        height: 250px;
+    }
+    .flavour-mobile-two {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two img{
+        width: 30%;
+        height: 250px;
+    }
+    .flavour-mobile-three {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three img{
+        width: 30%;
+        height: 250px;
+    }
+    .flavour-mobile-four {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four img{
+        width: 30%;
+        height: 250px;
+    }
+    .choose-flavour .container-flavour {
+        display: none;
+    }
+    .choose-flavour h2 {
+        grid-area: 13 / 2 / 63 / 6;
+        font-size: 4.4rem;
+        letter-spacing: 6.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        writing-mode: vertical-lr;
+        width: 100%;
+        height: 100%;
+        color: #000;
+    }
+
+    .choose-flavour .container-flavour-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-area: 64 / 2 / 72 / 12;
+    }
+
+    .choose-flavour .container-flavour-mobile a.service-arrow img {
+        position: relative;
+        top: 5px;
+        width: 35px;
+        height: 40px;
+    }
+    .choose-flavour .container-flavour-mobile h6 {
+        font-size: 1rem;
+        position: relative;
+        left: 10px;
+        text-align: justify;
+    }
+    .choose-flavour .container-flavour-mobile-big {
+        display: block;
+        grid-area: 4 / 2 / 11 / 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choose-flavour .container-flavour-mobile-big h4 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+
+    
+}
+
+@media only screen and (max-width: 880px) {
+    .try-out-one h5 {
+        position: relative;
+        right: 170px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 320px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 470px;
+    }
+
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 320px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 170px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 470px;
+    }
+    .try-out-three h5 {
+        position: relative;
+        right: 170px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 320px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 470px;
+    }
+    .try-out-one h5 {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 3.5px;
+    }
+    .try-out-two h5 {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 3.5px;
+    }
+    .try-out-three h5 {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 3.5px;
+    }
+    .freelance img {
+        width: 22%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 22%;
+        height: 52%;
+    }
+
+    .footer-line-one {
+        grid-area: 21 / 1 / 21 / 13;
+        background-color: #fff;
+        position: relative;
+        left: 40px;
+        width: 90%;
+        height: 2px;
+    }
+    .footer .footer-container-contact-info {
+        position: relative;
+        top: 100px;
+        left: 30px;
+        width: 90%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .footer .footer-nav {
+        position: relative;
+        bottom: 30px;
+        left: 30px;
+        width: 90%;
+        height: 10vh;
+    }
+}
+
+
+@media only screen and (max-width: 866px) {
+    .hero .divide-one h1 {
+        font-size: 2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-two h1 {
+        font-size: 2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: bold;
+    }
+    .hero .divide-one-three h1 {
+        font-size: 2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-four h1 {
+        font-size: 2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-one-five h1 {
+        font-size: 2rem;
+        letter-spacing: 0.28rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    .hero .divide-two h6 {
+        font-size: 0.8rem;
+    }
+    .problem-intro button {
+        height: 20%;
+        width: 20%;
+        background: none;
+        border-bottom: none;
+        border-top: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        color: #fff;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .problem-text-mobile p {
+        font-size: 1rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 2.2rem;
+        width: 100%;
+        color: #fff;
+        font-weight: 100;
+    }
+    .work-education .years .university {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #fff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .work-education .years .university h4 {
+        width: 50%;
+    }
+    .work-education .years .dev-ed {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-top: 1px solid #fff;
+    }
+    
+    .work-education .years .dev-ed h4 {
+        width: 50%;
+    }
+    .work-education .years .master {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-top: 1px solid #fff;
+    }
+    .work-education .years .master h4 {
+        width: 50%;
+    }
+    .work-education .years .canada {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-top: 1px solid #fff;
+    }
+    .work-education .years .canada h4 {
+        width: 50%;
+    }
+    .work-education .years .codecademy {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-top: 1px solid #fff;
+    }
+    .work-education .years .codecademy h4 {
+        width: 50%;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 40px;
+        font-size: 2.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 825px) {
+    .service .offer h4 {
+        font-size: 1rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 2.2rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .service img {
+        grid-area: 9 / 2 / 18 / 12;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width: 820px) {
+    .problem-intro h3 {
+        font-size: 1.1rem;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 180px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 350px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 500px;
+    }
+
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 350px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 180px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 500px;
+    }
+    .try-out-three h5 {
+        position: relative;
+        right: 180px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 350px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 500px;
+    }
+    .try-out-one h5 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: 3.2px;
+    }
+    .try-out-two h5 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: 3.2px;
+    }
+    .try-out-three h5 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: 3.2px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero img.kid {
+        grid-area: 3 / 3 / 18 / 12;
+        overflow: hidden;
+        background: #E39B3F;
+        position: relative;
+        top: 20px;
+        left: 0px;
+        border-radius: 101px;
+        width: 90%;
+        height: 500px;
+        opacity: 0.2;
+        transform: rotate(17deg);
+    }    
+
+    .hero .divide-mobile {
+        grid-area: 3 / 2 / 12 / 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 4.5rem;
+        letter-spacing: 2px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .hero .divide-mobile h1 span {
+        text-shadow: 0px 0px 0px #000;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        color: #000;
+    }
+
+    .hero .divide-one {
+        display: none;
+    }
+    .hero .divide-one-two {
+        display: none;
+    }
+    .hero .divide-one-three {
+        display: none;
+    }
+    .hero .divide-one-four {
+        display: none;
+    }
+    .hero .divide-one-five {
+        display: none;
+    }
+    .hero img.grape {
+        grid-area: 14 / 9 / 20 / 12;
+        width: 110%;
+        height: 100%;
+    }
+    .hero .button {
+        grid-area: 19 / 2 / 21 / 7;
+    }
+    .hero .divide-two {
+        grid-area: 14 / 2 / 17 / 7;
+    }
+    .hero .divide-two h6 {
+        font-size: 1rem;
+        text-shadow: 1px 1px 1px #000;
+    }
+    .work-education .who h4 {
+        font-size: 1rem;
+        width: 50%;
+        text-align: justify;
+        color: #fff;
+        font-weight: lighter;
+    }
+    .work-education .bullets .vision button {
+        width: 25%;
+        height: 20%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .vision p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .work-education .bullets .impact button {
+        width: 25%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .impact p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .work-education .bullets .develop button {
+        width: 30%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .develop p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .problem-intro {
+        grid-area: 3 / 2 / 8 / 12;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .problem-intro button {
+        height: 20%;
+        width: 100%;
+        background: none;
+        border-bottom: none;
+        border-top: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        color: #fff;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    .problem-intro h3 {
+        width: 100%;
+    }
+    .problem-intro h3 {
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .problem-bullets .job-bags {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        border-bottom: 1.5px solid #fff;
+        border-top: 1.5px solid #fff;
+        border-left: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+    }
+    .problem-bullets .job-bags h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 30px;
+    }
+    .problem-bullets .job-bags h6 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 30px;
+    }
+    .problem-bullets .aplications {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        border-bottom: 1.5px solid #fff;
+        border-top: 1.5px solid #fff;
+        border-left: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 30px;
+    }
+    .problem-bullets .aplications h6 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 30px;
+    }
+    .problem-bullets .rejections {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        height: 30%;
+        border-bottom: 1.5px solid #fff;
+        border-top: 1.5px solid #fff;
+        border-left: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+    }
+    .problem-bullets .rejections h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 30px;
+    }
+    .problem-bullets .rejections h6 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 30px;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 35px;
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .try-out-one h5 {
+        position: relative;
+        right: 190px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 370px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 530px;
+    }
+
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 370px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 190px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 530px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 370px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 530px;
+    }
+    .try-out-one h5 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        letter-spacing: 3.1px;
+    }
+    .try-out-two h5 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        letter-spacing: 3.1px;
+    }
+    .try-out-three h5 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        letter-spacing: 3.1px;
+    }
+} 
+
+
+
+
+@media only screen and (max-width: 750px) {
+    .try-out-one {
+        grid-area: 2 / 1 / 6 / 13;
+        display: flex;
+        justify-content: space-evenly;
+        height: 28vh;
+        transform: rotate(0deg);
+        width: 1500px;
+        position: relative;
+        right: 10px;
+        align-items: center;
+        background-color: #C2EB3A;
+    }
+    .first-call-to-action {
+        display: grid;
+        grid-template: repeat(5, 1fr) / repeat(12, 1fr);
+        overflow: hidden;
+        background-color: #2D2D32;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 190px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 390px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 570px;
+    }
+    .try-out-two {
+        grid-area: 2 / 1 / 6 / 13;
+        display: flex;
+        justify-content: space-evenly;
+        height: 28vh;
+        transform: rotate(0deg);
+        width: 1500px;
+        position: relative;
+        right: 10px;
+        align-items: center;
+        background-color: #C2EB3A;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 390px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 190px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 570px;
+    }
+    .try-out-three {
+        grid-area: 2 / 1 / 6 / 13;
+        display: flex;
+        justify-content: space-evenly;
+        height: 28vh;
+        transform: rotate(0deg);
+        width: 1500px;
+        position: relative;
+        right: 10px;
+        align-items: center;
+        background-color: #C2EB3A;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 390px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 570px;
+    }
+    .flavour-mobile-one {
+        width: 110%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 110%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 110%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 110%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .contact-form .form-submit form input.submit {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        width: 95%;
+        background-color: #D3F7F3;
+        cursor: pointer;
+    }
+    .freelance img {
+        width: 24%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 24%;
+        height: 52%;
+    }
+    .footer .footer-container-contact-info p {
+        width: 25%;
+        color: #fff;
+        text-align: justify;
+        font-size: 0.7rem;
+    }
+    .problem-intro h3 {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    .service img {
+        grid-area: 10 / 2 / 19 / 12;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 35px;
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .learning-one {
+        grid-area: 6 / 1 / 26 / 13;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px;
+        z-index: 1;
+    }
+    .learning-two {
+        grid-area: 28 / 1 / 48 / 13;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 1;
+    }
+    .learning-three {
+        grid-area: 50 / 1 / 70 / 13;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 1;
+    }
+    .learning-four {
+        grid-area: 72 / 1 / 92 / 13;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #fff;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 10px;
+        transition: all 2s ease-in-out;
+        z-index: 1;
+    }
+    .flavour-mobile-one {
+        width: 115%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 115%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 115%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 115%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 711px) {
+    .try-out-one h5 {
+        position: relative;
+        right: 200px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 400px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 595px;
+    }
+    .try-out-one h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 400px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 200px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 595px;
+    }
+    .try-out-two h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 400px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 595px;
+    }
+    .try-out-three h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 30px;
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .contact-form .form-call-to-action h4 {
+        width: 100%;
+        padding-left: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 690px) { 
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 4.5rem;
+        letter-spacing: 2px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .hero .divide-two h6 {
+        font-size: 0.9rem;
+        text-shadow: 1px 1px 1px #000;
+    }
+    .problem-intro h3 {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+    .freelance img {
+        width: 26%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 26%;
+        height: 52%;
+    }
+
+}
+
+@media only screen and (max-width: 670px) {
+    .try-out-one h5 {
+        position: relative;
+        right: 210px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 430px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 630px;
+    }
+    .try-out-one h5 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 430px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 210px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 630px;
+    }
+    .try-out-three h5.four-one {
+        position: relative;
+        right: 210px;
+    }
+    .try-out-two h5 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 430px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 630px;
+    }
+    .try-out-three h5 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .flavour-mobile-one {
+        width: 120%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 120%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 120%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 120%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .hero img.kid {
+        grid-area: 2 / 2 / 19 / 12;
+        overflow: hidden;
+        background: #E39B3F;
+        position: relative;
+        top: 20px;
+        left: 0px;
+        border-radius: 80px;
+        width: 100%;
+        height: 520px;
+        opacity: 0.2;
+        transform: rotate(5deg);
+    }
+    .hero img.grape {
+        grid-area: 11 / 8 / 21 / 12;
+        width: 100%;
+        height: 70%;
+    }
+    .service .offer h4 {
+        font-size: 0.9rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 2.2rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .work-education .pineaple-soda {
+        grid-area: 25 / 4 / 45 / 9;
+        position: relative;
+        left: 0px;
+        width: 120%;
+        height: 85%;
+        opacity: 0.4;
+    }
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        left: 0px;
+        height: 100%;
+        width: 130%;
+    }
+    .work-education .bullets .vision button {
+        width: 25%;
+        height: 20%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .vision p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 0.75rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .work-education .bullets .impact button {
+        width: 25%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .impact p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 0.75rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .work-education .bullets .develop button {
+        width: 30%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .develop p {
+        width: 50%;
+        padding-top: 20px;
+        font-size: 0.75rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .work-education .years .university h4 {
+        font-size: 0.75rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .work-education .years .master h4 {
+        font-size: 0.75rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .work-education .years .dev-ed h4 {
+        font-size: 0.75rem;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .work-education .years .canada h4 {
+        font-size: 0.75rem;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .work-education .years .codecademy h4 {
+        font-size: 0.75rem;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .problem-intro h3 {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .problem-text-mobile p {
+        font-size: 0.9rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 2rem;
+        width: 100%;
+        color: #fff;
+        font-weight: 100;
+    }
+    .contact-form .form-call-to-action h4 {
+        width: 80%;
+        padding-left: 30px;
+        font-size: 2.3rem;
+    }
+    .freelance img {
+        width: 28%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 28%;
+        height: 52%;
+    }
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 3rem;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+} 
+
+@media only screen and (max-width: 650px) {
+    .work-education .years {
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    .work-education .who {
+        grid-area: 3 / 2 / 6 / 12;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        height: 20vh;
+    }
+    .work-education .who button {
+        width: 100%;
+        background: none;
+        border-bottom: none;
+        border-top: none;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.8rem;
+        padding: 5px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .work-education .who h4 {
+        font-size: 1rem;
+        width: 100%;
+        text-align: justify;
+        color: #fff;
+        font-weight: lighter;
+    }
+    .work-education .bullets .vision {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        height: 25vh;
+    }
+    .work-education .bullets .vision button {
+        width: 100%;
+        height: 20%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .vision p {
+        width: 100%;
+        padding-top: 20px;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .work-education .bullets .impact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 25vh;
+    }
+    .work-education .bullets .impact button {
+        width: 100%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .impact p {
+        width: 100%;
+        padding-top: 20px;
+        font-size: 0.8rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .work-education .bullets .develop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 25vh;
+    }
+    .work-education .bullets .develop button {
+        width: 100%;
+        background: none;
+        border-top: none;
+        border-bottom: none;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .work-education .bullets .develop p {
+        width: 100%;
+        padding-top: 20px;
+        font-size: 0.75rem;
+        text-align: justify;
+        color: #fff;
+    }
+    .work-education .years .university {
+        display: flex;
+        height: 30%;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        border-top: 0px solid #fff;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .work-education .years .university h4 {
+        width: 100%;
+    }
+    .work-education .years .master {
+        display: flex;
+        height: 30%;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-top: 1px solid #fff;
+    }
+    .work-education .years .master h4 {
+        width: 100%;
+    }
+    .work-education .years .dev-ed {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-top: 1px solid #fff;
+    }
+    .work-education .years .dev-ed h4 {
+        width: 100%;
+    }
+    .work-education .years .canada {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 30%;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-top: 1px solid #fff;
+    }
+    .work-education .years .canada h4 {
+        width: 100%;
+    }
+    .work-education .years .codecademy {
+        display: flex;
+        height: 30%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-top: 1px solid #fff;
+        border-bottom: 0px solid #fff;
+    }
+    .work-education .years .codecademy h4 {
+        width: 100%;
+    }
+    .work-education .pineaple-soda {
+        display: none;
+    }
+
+
+
+
+
+} 
+
+
+
+@media only screen and (max-width: 630px) {
+    .problem-bullets .job-bags {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+        border-top: 1px solid #fff;
+        border-bottom: 1.5px solid #fff;
+        border-left: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+    }
+    .problem-bullets .job-bags h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .problem-bullets .job-bags h6 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 0px;
+    }
+    .problem-bullets .aplications {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        height: 30%;
+        border-top: 1px solid #fff;
+        border-bottom: 1.5px solid #fff;
+        border-left: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .problem-bullets .aplications h6 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 0px;
+    }
+    .problem-bullets .rejections {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+        border-top: 1px solid #fff;
+        border-bottom: 1.5px solid #fff;
+        border-left: 1.5px solid #fff;
+        border-right: 1.5px solid #fff;
+    }
+    .problem-bullets .rejections h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .problem-bullets .rejections h6 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 0px;
+    }
+
+
+    .freelance {
+        grid-area: 7 / 1 / 41 / 13;
+        border: 1px solid #2618D0;
+        background-color: #2618D0;
+        padding-left: 10px;
+        margin-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+        height: 93vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+    .freelance img {
+        width: 26%;
+        height: 52%;
+    }
+    .job-offer {
+        grid-area: 46 / 1 / 80 / 13;
+        background-color: #F24026;
+        padding-left: 10px;
+        margin-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    }
+    .job-offer img {
+        width: 26%;
+        height: 52%;
+    }
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        left: 0px;
+        height: 100%;
+        width: 140%;
+    }
+    .footer .footer-container-contact-info {
+        position: relative;
+        top: 50px;
+        left: 10px;
+        width: 90%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer .footer-container-contact-info p {
+        width: 100%;
+        color: #fff;
+        text-align: right;
+        font-size: 0.7rem;
+    }
+    .footer-line-one {
+        grid-area: 18 / 1 / 18 / 13;
+        left: 75px;
+        width: 80%;
+    }
+    .footer-line-two {
+        display: none;
+    }
+    .footer-line-three {
+        display: none;
+    }
+    .footer .footer-nav {
+        height: 20%;
+    }
+    .footer .footer-nav ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .footer .footer-nav ul li {
+        width: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 627px) {
+    .service img {
+        grid-area: 11 / 2 / 20 / 12;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .work-education .pineaple-soda {
+        grid-area: 25 / 4 / 45 / 9;
+        position: relative;
+        left: 0px;
+        width: 130%;
+        height: 85%;
+        opacity: 0.4;
+    }
+
+    .flavour-mobile-one {
+        width: 125%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 125%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 125%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 125%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        left: 0px;
+        height: 100%;
+        width: 115%;
+    }
+} 
+
+@media only screen and (max-width: 620px) {
+    .hero img.grape {
+        grid-area: 11 / 8 / 21 / 12;
+        width: 100%;
+        height: 60%;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 450px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 670px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 445px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 670px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 670px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 445px;
+    }
+} 
+
+@media only screen and (max-width: 615px) {
+    .contact-form .form-call-to-action h4 {
+        padding-left: 20px;
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 614px) {
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 4.2rem;
+        letter-spacing: 1.8px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .hero .divide-two h6 {
+        font-size: 0.85rem;
+        text-shadow: 1px 1px 1px #000;
+        line-height: 1.8rem;
+    }
+    .footer .footer-box .footer-container-text {
+        position: relative;
+        top: 30px;
+        left: 30px;
+        width: 90%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+} 
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        grid-area: 1 / 5 / 3 / 12;
+    }
+    .hero .divide-mobile {
+        grid-area: 2 / 2 / 10 / 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    .hero .button button {
+        width: 100%;
+    }
+    .hero img.grape {
+        grid-area: 11 / 8 / 21 / 12;
+        width: 100%;
+        height: 55%;
+    }
+    .hero .divide-two {
+        grid-area: 13 / 2 / 17 / 7;
+    }
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        left: 0px;
+        height: 100%;
+        width: 125%;
+    }
+    .service .offer h4 {
+        font-size: 0.9rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 2rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .problem-bullets .rejections h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .problem-bullets .job-bags h1 {
+        font-size: 4rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .flavour-mobile-one {
+        width: 130%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 130%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 130%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 130%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        font-size: 2.5rem;
+    }
+} 
+
+@media only screen and (max-width: 580px) {
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        left: 0px;
+        height: 100%;
+        width: 135%;
+    }
+
+    .try-out-one h5 {
+        position: relative;
+        right: 230px;
+    }
+    .try-out-one h5 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 470px;
+    }
+    .try-out-one img.lemon {
+        width: 120px;
+        height: 110px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 705px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 230px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 470px;
+    }
+    .try-out-two img.lemon-two {
+        width: 120px;
+        height: 110px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 705px;
+    }
+    .try-out-two h5 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-three h5.four-one {
+        position: relative;
+        right: 230px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 470px;
+    }
+    .try-out-three img.lemon-three {
+        width: 120px;
+        height: 110px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 705px;
+    }
+    .try-out-three h5 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .flavour-mobile-one {
+        width: 130%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 135%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 135%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 135%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .footer-box .footer-container-text {
+        position: relative;
+        top: 30px;
+        left: 10px;
+        width: 90%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 565px) {
+    .choose-flavour .container-flavour-mobile-big h4 {
+        font-size: 1rem;
+        letter-spacing: 1.8px;
+        font-weight: normal;
+    }
+    .choose-flavour .container-flavour-mobile h6 {
+        font-size: 0.9rem;
+        position: relative;
+        left: 10px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .rectangle-mobile-header {
+        grid-area: 1 / 1 / 3 / 13;
+        width: 100%;
+        height: 100%;
+        background-color: #E39B3F;
+        opacity: 0.2;
+    }
+    header a.logo {
+        z-index: 1;
+    }
+    header nav {
+        z-index: 1;
+    }
+    
+    
+    .hero img.kid {
+        grid-area: 1 / 1 / 22 / 13;
+        overflow: hidden;
+        background: #E39B3F;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        border-radius: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        transform: rotate(0deg);
+    }
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 4rem;
+        letter-spacing: 1.6px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .try-out-one {
+        grid-area: 1 / 1 / 5 / 13;
+        display: flex;
+        justify-content: space-evenly;
+        height: 28vh;
+        transform: rotate(0deg);
+        width: 1500px;
+        position: relative;
+        right: 10px;
+        align-items: center;
+        background-color: #C2EB3A;
+    }
+    
+    .service .offer h4 {
+        font-size: 0.9rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .work-education .bullets .vision button {
+        font-size: 0.75rem;
+    }
+    .work-education .bullets .impact button {
+        font-size: 0.75rem;
+    }
+    .work-education .bullets .develop button {
+        font-size: 0.75rem;
+    }
+    .problem-text-mobile p {
+        font-size: 0.85rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 1.7rem;
+        width: 100%;
+        color: #fff;
+        font-weight: 100;
+    }
+    .learning-one h2 {
+        width: 75%;
+        text-align: justify;
+        color: #000;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.3rem;
+        letter-spacing: 0.9px;
+        transition: all 2s ease-in;
+    }
+    .learning-two .title-img h3 {
+        width: 60%;
+        font-size: 0.88rem;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        color: #000;
+    }
+    .learning-two p {
+        font-size: 0.66rem;
+        color: #000;
+        text-align: justify;
+        line-height: 1.2rem;
+        width: 90%;
+    }
+    .learning-three .title-img h3 {
+        width: 80%;
+        font-size: 0.88rem;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        color: #000;
+        text-align: justify;
+    }
+    
+    .learning-three p {
+        font-size: 0.66rem;
+        color: #000;
+        text-align: justify;
+        line-height: 1.2rem;
+        width: 90%;
+    }
+    .learning-four .title-img h3 {
+        width: 75%;
+        font-size: 0.88rem;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: #000;
+        text-align: justify;
+    }
+    
+    .learning-four p {
+        font-size: 0.66rem;
+        color: #000;
+        text-align: justify;
+        line-height: 1.2rem;
+        width: 90%;
+    }
+    .freelance img {
+        width: 28%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 28%;
+        height: 52%;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        font-size: 2.5rem;
+    }
+
+} 
+
+
+@media only screen and (max-width: 530px) {
+    header nav {
+        grid-area: 1 / 4 / 3 / 12;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 480px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 720px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 720px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 480px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 480px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 720px;
+    }
+    .freelance img {
+        width: 30%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 30%;
+        height: 52%;
+    }
+    .flavour-mobile-one {
+        width: 140%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 140%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 140%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 140%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-line-one {
+        grid-area: 18 / 1 / 18 / 13;
+        left: 40px;
+        width: 83%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .contact-form .form-call-to-action p {
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 3rem;
+        letter-spacing: 1.6px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .hero .divide-two h6 {
+        font-size: 0.8rem;
+        text-shadow: 1px 1px 1px #000;
+        line-height: 1.8rem;
+    }
+    .service .offer {
+        grid-area: 2 / 2 / 9 / 12;
+    }
+    .service img {
+        grid-area: 11 / 2 / 20 / 12;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .try-out-one h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 240px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 490px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 730px;
+    }
+    .service .offer h4 {
+        font-size: 0.8rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .work-education .who button {
+        font-size: 0.62rem;
+    }
+    .work-education .who h4 {
+        font-size: 0.9rem;
+    }
+    .work-education .bullets .vision button {
+        font-size: 0.72rem;
+    }
+    .work-education .bullets .vision p {
+        padding-top: 20px;
+        font-size: 0.75rem;
+    }
+    .work-education .bullets .impact button {
+        font-size: 0.72rem;
+    }
+    .work-education .bullets .impact p {
+        font-size: 0.75rem;
+    }
+    .work-education .bullets .develop button {
+        font-size: 0.72rem;
+    }
+    .work-education .bullets .develop p {
+        font-size: 0.75rem;
+    }
+    .work-education .years .university h3 {
+        font-size: 0.85rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .work-education .years .university h4 {
+        font-size: 0.72rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .work-education .years .master h3 {
+        font-size: 0.85rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .work-education .years .master h4 {
+        font-size: 0.72rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .work-education .years .dev-ed h3 {
+        font-size: 0.85rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .work-education .years .dev-ed h4 {
+        font-size: 0.72rem;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .work-education .years .canada h3 {
+        font-size: 0.85rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .work-education .years .canada h4 {
+        font-size: 0.72rem;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .work-education .years .codecademy h3 {
+        font-size: 0.85rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .work-education .years .codecademy h4 {
+        font-size: 0.72rem;
+        color: #fff;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        left: 0px;
+        height: 100%;
+        width: 145%;
+    }
+    .problem-intro h3 {
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .problem-bullets .job-bags h1 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .problem-bullets .rejections h1 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .problem-text-mobile p {
+        font-size: 0.82rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 1.7rem;
+        width: 100%;
+        color: #fff;
+        font-weight: 100;
+    }
+    .try-out-two h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 240px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 490px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 730px;
+    }
+    .try-out-three h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-three h5.four-one {
+        position: relative;
+        right: 230px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 490px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 730px;
+    }
+    .flavour-mobile-one {
+        width: 145%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 145%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 145%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 145%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 20px;
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .container-form .form-submit form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        padding: 10px;
+        position: relative;
+        left: 5px;
+    }
+} 
+
+@media only screen and (max-width: 500px) {
+    header a.logo {
+        font-size: 1rem;
+    }
+    header nav ul {
+        font-size: 0.8rem;
+    }
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1.3rem;
+        font-weight: bold;
+        line-height: 3rem;
+        letter-spacing: 1.5px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .try-out-one h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 240px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 500px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 750px;
+    }
+    .try-out-two h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 240px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 500px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 750px;
+    }
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        left: 0px;
+        height: 100%;
+        width: 165%;
+    }
+    .try-out-three h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-three h5.four-one {
+        position: relative;
+        right: 230px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 500px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 750px;
+    }
+    .flavour-mobile-one {
+        width: 150%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 150%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 150%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 150%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 20px;
+        font-size: 1.8rem;
+    }
+    .problem-bullets .job-bags h6 {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 0px;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 0px;
+    }
+    .problem-bullets .aplications h6 {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 0px;
+    }
+
+    .problem-bullets .rejections h6 {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        right: 0px;
+    }
+    .work-education .pineaple-soda {
+        grid-area: 25 / 4 / 45 / 9;
+        position: relative;
+        left: 0px;
+        width: 140%;
+        height: 85%;
+        opacity: 0.4;
+        overflow: hidden;
+    }
+    .learning-one {
+        border-radius: 5px;
+    }
+    .learning-two {
+        border-radius: 5px;
+    }
+    .learning-three {
+        border-radius: 5px;
+    }
+    .learning-four {
+        border-radius: 5px;
+    }
+    .rectangle-mobile {
+        border-radius: 0px;
+    }
+    .contact-form .form-call-to-action {
+        border-radius: 0px;
+    }
+    .container-form .form-submit {
+        border-radius: 0px;
+    }
+    .footer .footer-box {
+        border-radius: 0px;
+    }
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    .footer .footer-box .footer-container-text h6 {
+        font-size: 0.8rem;
+        letter-spacing: 1.3px;
+        font-weight: normal;
+        color: #fff;
+    }
+    .contact-form .form-call-to-action p {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 487px) {
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        font-size: 2.2rem;
+    }
+} 
+
+@media only screen and (max-width: 480px) {
+    .choose-flavour .container-flavour-mobile-big h4 {
+        font-size: 0.9rem;
+        letter-spacing: 1.4px;
+        font-weight: normal;
+    }
+    .flavour-mobile-one {
+        width: 160%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 160%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 160%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 160%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .try-out-one h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 250px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 520px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 770px;
+    }
+    .try-out-two h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 250px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 520px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 770px;
+    }
+    .try-out-three h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+    .try-out-three h5.four-one {
+        position: relative;
+        right: 250px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 520px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 770px;
+    }
+    .job-offer img {
+        width: 32%;
+        height: 52%;
+    }
+    .freelance img {
+        width: 32%;
+        height: 52%;
+    }
+    .choose-flavour .container-flavour-mobile h6 {
+        font-size: 0.8rem;
+        position: relative;
+        left: 0px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .try-out-one h5.two {
+        position: relative;
+        right: 790px;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 10px;
+    }
+    .problem-bullets .rejections h1 {
+        font-size: 3.5rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 10px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 790px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 790px;
+    }
+    .freelance img {
+        width: 34%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 34%;
+        height: 52%;
+    }
+    .flavour-mobile-one {
+        width: 165%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-two {
+        width: 165%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-three {
+        width: 165%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flavour-mobile-four {
+        width: 165%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 444px) {
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 3rem;
+        letter-spacing: 1.3px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+} 
+
+@media only screen and (max-width: 441px) {
+    .service .offer h4 {
+        font-size: 0.8rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 3rem;
+        letter-spacing: 1.6px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .hero .divide-two h6 {
+        font-size: 0.75rem;
+        text-shadow: 1px 1px 1px #000;
+        line-height: 1.8rem;
+    }
+    .try-out-one h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 260px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 540px;
+    }
+    .try-out-one img.lemon {
+        width: 110px;
+        height: 100px;
+    }
+
+    .try-out-one h5.two {
+        position: relative;
+        right: 800px;
+    }
+    .service .offer h4 {
+        font-size: 0.75rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    .problem-intro h3 {
+        width: 100%;
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+    }
+    .problem-bullets .job-bags h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 10px;
+    }
+    .problem-bullets .aplications h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 10px;
+    }
+    .problem-bullets .rejections h1 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: 2px;
+        position: relative;
+        left: 10px;
+    }
+    .problem-intro {
+        grid-area: 2 / 2 / 8 / 12;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .problem-bullets {
+        grid-area: 10 / 2 / 35 / 12;
+        width: 100%;
+        height: 100%;
+    }
+    .problem-text-mobile {
+        display: block;
+        grid-area: 36 / 2 / 45 / 12;
+    }
+    .problem-text-mobile p {
+        font-size: 0.8rem;
+        text-align: justify;
+        letter-spacing: 1px;
+        line-height: 1.4rem;
+        width: 100%;
+        color: #fff;
+        font-weight: 100;
+    }
+    .try-out-two h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 260px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 540px;
+    }
+    .try-out-two img.lemon-two {
+        width: 110px;
+        height: 100px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 800px;
+    }
+    .try-out-three h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+    .try-out-three h5.four-one {
+        position: relative;
+        right: 260px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 540px;
+    }
+    .try-out-three img.lemon-three {
+        width: 110px;
+        height: 100px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 800px;
+    }
+    .learning-one h2 {
+        width: 75%;
+        text-align: justify;
+        color: #000;
+        font-size: 0.9em;
+        font-weight: 300;
+        line-height: 1.1rem;
+        letter-spacing: 0.9px;
+        transition: all 2s ease-in;
+    }
+    .learning-two .title-img h3 {
+        width: 60%;
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        color: #000;
+    }
+    .learning-two p {
+        font-size: 0.62rem;
+        color: #000;
+        text-align: justify;
+        line-height: 1.2rem;
+        width: 90%;
+    }
+    .learning-three .title-img h3 {
+        width: 80%;
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        color: #000;
+        text-align: justify;
+    }
+    
+    .learning-three p {
+        font-size: 0.62rem;
+        color: #000;
+        text-align: justify;
+        line-height: 1.2rem;
+        width: 90%;
+    }
+    .choose-flavour .container-flavour-mobile-big h4 {
+        font-size: 0.8rem;
+        letter-spacing: 1.3px;
+        font-weight: normal;
+    }
+    .learning-four .title-img h3 {
+        width: 75%;
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: #000;
+        text-align: justify;
+    }
+    
+    .learning-four p {
+        font-size: 0.62rem;
+        color: #000;
+        text-align: justify;
+        line-height: 1.2rem;
+        width: 90%;
+    }
+    .flavour-mobile-one img {
+        width: 35%;
+        height: 250px;
+    }
+    .flavour-mobile-two img {
+        width: 35%;
+        height: 250px;
+    }
+    .flavour-mobile-three img {
+        width: 35%;
+        height: 250px;
+    }
+    .flavour-mobile-four img {
+        width: 35%;
+        height: 250px;
+    }
+} 
+
+@media only screen and (max-width: 417px) {
+    .hero .divide-mobile {
+        grid-area: 2 / 2 / 11 / 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 2.8rem;
+        letter-spacing: 1.4px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .service .offer h4 {
+        font-size: 0.7rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .work-education .pineaple-soda img.pineaple {
+        position: relative;
+        left: 0px;
+        height: 100%;
+        width: 175%;
+    }
+}
+
+
+
+@media only screen and (max-width: 411px) {
+    header {
+        display: grid;
+        grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+        height: 15vh;
+    }
+    .rectangle-mobile-header {
+        grid-area: 1 / 1 / 7 / 13;
+        width: 100%;
+        height: 100%;
+        background-color: #E39B3F;
+        opacity: 0.2;
+    }
+    header nav {
+        grid-area: 5 / 2 / 7 / 12;
+    }
+
+    header a.logo {
+      grid-area: 1 / 5 / 4 / 9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 820px;
+    }
+    .try-out-one img.lemon {
+        width: 100px;
+        height: 90px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 550px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 820px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 550px;
+    }
+    .try-out-two img.lemon-two {
+        width: 100px;
+        height: 90px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 265px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 545px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 820px;
+    }
+    .try-out-three img.lemon-three {
+        width: 100px;
+        height: 90px;
+    }
+    .choose-flavour .container-flavour-mobile h6 {
+        font-size: 0.7rem;
+        position: relative;
+        left: 0px;
+        text-align: justify;
+    }
+    .freelance img {
+        width: 36%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 36%;
+        height: 52%;
+    }
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    .footer .footer-box .footer-container-text h6 {
+        font-size: 0.7rem;
+        letter-spacing: 1.1px;
+        font-weight: normal;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 2.5rem;
+        letter-spacing: 1.4px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .hero .divide-two h6 {
+        font-size: 0.7rem;
+        text-shadow: 1px 1px 1px #000;
+        line-height: 1.5rem;
+    }
+    .try-out-one h5 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 270px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 555px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 830px;
+    }
+    .try-out-one img.lemon {
+        width: 90px;
+        height: 80px;
+    }
+    .try-out-two h5 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 270px;
+    }
+    .try-out-two img.lemon-two {
+        width: 90px;
+        height: 80px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 555px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 830px;
+    }
+    .try-out-three h5 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+    }
+    .try-out-three img.lemon-three {
+        width: 90px;
+        height: 80px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 555px;
+    }
+    .try-out-three h5.four-one {
+        position: relative;
+        right: 270px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 830px;
+    }
+    .learning-two .title-img h3 {
+        width: 60%;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        color: #000;
+    }
+    .learning-three .title-img h3 {
+        width: 80%;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0px;
+        color: #000;
+        text-align: justify;
+    }
+    .learning-four .title-img h3 {
+        width: 75%;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: #000;
+        text-align: justify;
+    }
+    .freelance img {
+        width: 38%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 38%;
+        height: 52%;
+    }
+
+    .service .offer h4 {
+        font-size: 0.7rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .choose-flavour .container-flavour-mobile h6 {
+        font-size: 0.7rem;
+        width: 50%;
+        position: relative;
+        left: 0px;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 394px) {
+    .contact-form .form-call-to-action h4 {
+        padding-left: 8px;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .choose-flavour .container-flavour-mobile-big h4 {
+        font-size: 0.75rem;
+        letter-spacing: 1.1px;
+        font-weight: normal;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 565px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 565px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 850px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 850px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 850px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 565px;
+    }
+    .freelance img {
+        width: 40%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 40%;
+        height: 52%;
+    }
+}
+
+
+
+@media only screen and (max-width: 371px) {
+    .contact-form .form-call-to-action h4 {
+        padding-left: 3px;
+        font-size: 1.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 365px) {
+    .freelance img {
+        width: 42%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 42%;
+        height: 52%;
+    }
+    .job-offer h6 {
+        font-size: 0.8rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .freelance h6 {
+        font-size: 0.8rem;
+        color: #fff;
+        font-weight: normal;
+    }
+
+    .flavour-mobile-one img {
+        width: 38%;
+        height: 250px;
+    }
+    .flavour-mobile-two img {
+        width: 38%;
+        height: 250px;
+    }
+    .flavour-mobile-three img {
+        width: 38%;
+        height: 250px;
+    }
+    .flavour-mobile-four img {
+        width: 38%;
+        height: 250px;
+    }
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+    .footer .footer-box .footer-container-text h6 {
+        font-size: 0.66rem;
+        letter-spacing: 1px;
+        font-weight: normal;
+        color: #fff;
+    }
+} 
+
+
+@media only screen and (max-width: 350px) {
+    .hero .divide-mobile h1 {
+        text-shadow: 1px 1px 1px #000;
+        font-size: 0.9rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+        letter-spacing: 1.2px;
+        text-align: justify;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .hero .divide-two h6 {
+        font-size: 0.6rem;
+        text-shadow: 1px 1px 1px #000;
+        line-height: 1.5rem;
+    }
+    .try-out-one h5 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .try-out-one h5 {
+        position: relative;
+        right: 285px;
+    }
+    .try-out-one img.lemon {
+        position: relative;
+        right: 590px;
+    }
+    .try-out-one h5.two {
+        position: relative;
+        right: 880px;
+    }
+    .try-out-one img.lemon {
+        width: 80px;
+        height: 70px;
+    }
+    .try-out-two h5 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .try-out-two h5.three {
+        position: relative;
+        right: 285px;
+    }
+    .try-out-two img.lemon-two {
+        width: 80px;
+        height: 70px;
+    }
+    .try-out-two img.lemon-two {
+        position: relative;
+        right: 590px;
+    }
+    .try-out-two h5.four {
+        position: relative;
+        right: 880px;
+    }
+    .try-out-three h5 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .try-out-three img.lemon-three {
+        width: 80px;
+        height: 70px;
+    }
+    .try-out-three img.lemon-three {
+        position: relative;
+        right: 590px;
+    }
+    .try-out-three h5.four-one {
+        position: relative;
+        right: 285px;
+    }
+    .try-out-three h5.five {
+        position: relative;
+        right: 880px;
+    }
+    .freelance img {
+        width: 44%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 44%;
+        height: 52%;
+    }
+    .flavour-mobile-one img {
+        width: 40%;
+        height: 250px;
+    }
+    .flavour-mobile-two img {
+        width: 40%;
+        height: 250px;
+    }
+    .flavour-mobile-three img {
+        width: 40%;
+        height: 250px;
+    }
+    .flavour-mobile-four img {
+        width: 40%;
+        height: 250px;
+    }
+    .choose-flavour .container-flavour-mobile-big h4 {
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        font-weight: normal;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .service .offer h4 {
+        font-size: 0.7rem;
+        text-align: justify;
+        color: #fff;
+        line-height: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .freelance img {
+        width: 45%;
+        height: 52%;
+    }
+    .job-offer img {
+        width: 45%;
+        height: 52%;
+    }
+    .job-offer h6 {
+        font-size: 0.7rem;
+        color: #fff;
+        font-weight: normal;
+    }
+    .freelance h6 {
+        font-size: 0.7rem;
+        color: #fff;
+        font-weight: normal;
+    }
+
+}
