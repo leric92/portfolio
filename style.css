@@ -1,0 +1,5627 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #000;
+}
+
+
+header {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(12, 1fr);
+    height: 15vh;
+    background-color: #2D2D32;
+}
+
+header a.logo {
+    grid-area: 1 / 2 / 4 / 3;
+    color: #fff;
+    font-size: 1.3rem;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+
+header nav {
+    grid-area: 1 / 6 / 3 / 12;
+}
+
+header nav ul  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+
+
+
+.hero {
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(12, 1fr);
+    background-color: #2D2D32;
+    overflow: hidden;
+}
+
+.hero .hero-container-text {
+    grid-area: 2 / 2 / 10 / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: flex-start;
+}
+
+
+.hero .hero-container-text .hero-container-text-one h1 {
+    font-size: 7.5rem;
+    letter-spacing: 20px;
+    color: #fff;
+}
+
+.hero .hero-container-text .hero-container-text-two h1 {
+    font-size: 7.5rem;
+    letter-spacing: 20px;
+    color: #fff;
+}
+
+.hero .hero-container-text .hero-container-text-three h1 {
+    font-size: 7.5rem;
+    letter-spacing: 20px;
+    color: #fff;
+}
+
+.hero  img.lemon {
+    grid-area: 3 / 7 / 5 / 9;
+    width: 120px;
+    height: 120px;
+    justify-self: center;
+    position: relative;
+    right: 40px;
+    bottom: 35px;
+}
+
+.hero img.orange {
+    grid-area: 5 / 3 / 7 / 5;
+    width: 120px;
+    height: 110px;
+    align-self: center;
+}
+
+.hero img.grape {
+    grid-area: 7 / 5 / 9 / 7;
+    position: relative;
+    top: 40px;
+    left: 0px;
+    width: 140px;
+    height: 155px;
+}
+
+.first-call-to-action {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+    overflow: hidden;
+    background-color: #2D2D32;
+}
+
+.rectangle-background {
+    grid-area: 5 / 1 / 7 / 13;
+    width: 100%;
+    height: 100%;
+    background-color: #3340D9;
+}
+
+.try-out-one {
+    grid-area: 2 / 1 / 6 / 13;
+    display: flex;
+    justify-content: space-evenly;
+    height: 28vh;
+    transform: rotate(-2deg);
+    width: 1500px;
+    position: relative;
+    right: 10px;
+    align-items: center;
+    background-color: #E4B722;
+}
+
+.try-out-one h5 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+
+}
+
+
+
+.try-out-one img.pineapple {
+    width: 135px;
+    height: 120px;
+}
+
+
+
+
+
+
+.products {
+    display: grid;
+    grid-template: repeat(15, 1fr) / repeat(12, 1fr);
+    background: linear-gradient(#3340D9, #DB563B);
+}
+
+.products .products-intro-text {
+    grid-area: 3 / 2 / 6 / 12;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.products .products-intro-text h4 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 4rem;
+
+}
+
+
+
+.products .develop-grape {
+    grid-area: 7 / 1 / 13 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 90%;
+    height: 65vh;
+    position: relative;
+    left: 30px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 0.5px 10px #000;
+}
+
+.products .develop-grape .develop-bottle  {
+    height: 70%;
+}
+
+.products .develop-grape .develop-grape-about {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products .develop-grape .develop-grape-about h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+
+.products .develop-grape .develop-grape-about .about-company {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.products .develop-grape .develop-grape-about .about-company h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.products .develop-grape .develop-grape-about .about-company h6 {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.products .develop-grape .develop-bottle img {
+    position: relative;
+    top: 40px;
+    width: 128px;
+    height: 280px;
+}
+
+
+.products .design-lemon {
+    grid-area: 7 / 4 / 13 / 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 90%;
+    height: 65vh;
+    position: relative;
+    left: 20px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 0.5px 10px #000;
+}
+
+
+.products .design-lemon .lemon-bottle {
+    height: 70%;
+}
+
+.products .design-lemon .design-lemon-about {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products .design-lemon .design-lemon-about h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.products .design-lemon .design-lemon-about .about-company {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.products .design-lemon .design-lemon-about .about-company  h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.products .design-lemon .design-lemon-about .about-company h6 {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+
+.products .design-lemon .lemon-bottle img {
+    position: relative;
+    top: 40px;
+    width: 128px;
+    height: 280px;
+}
+
+.products .media-pine {
+    grid-area: 7 / 7 / 13 / 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 90%;
+    height: 65vh;
+    position: relative;
+    left: 10px;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 0.5px 10px #000;
+}
+
+.products .media-pine .pine-bottle {
+    height: 70%;
+}
+
+.products .media-pine .media-pine-about {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products .media-pine .media-pine-about h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.products .media-pine .media-pine-about .about-company {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.products .media-pine .media-pine-about .about-company h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+
+.products .media-pine .media-pine-about .about-company h6 {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.products .media-pine .pine-bottle img {
+    position: relative;
+    top: 40px;
+    width: 128px;
+    height: 280px;
+}
+
+.products .orange-mar {
+    grid-area: 7 / 10 / 13 / 13;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 90%;
+    height: 65vh;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 0.5px 10px #000;
+}
+
+
+.products .orange-mar .oran-bottle {
+    height: 70%;
+}
+
+.products .orange-mar .orange-mar-about {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products .orange-mar .orange-mar-about h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.products .orange-mar .orange-mar-about .about-company {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.products .orange-mar .orange-mar-about .about-company h5 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.products .orange-mar .orange-mar-about .about-company h6 {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+
+.products .orange-mar .oran-bottle img {
+    position: relative;
+    top: 40px;
+    width: 128px;
+    height: 280px;
+}
+
+
+.burger {
+    display: grid;
+    grid-template: repeat(62, 1fr) / repeat(12, 1fr);
+    background-color: #DB563B;
+}
+
+
+.display-products {
+    grid-area: 3 / 1 / 62 / 13;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-one {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.programastic {
+    padding: 25px;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+}
+
+.programastic h6 {
+    font-size: 1.12rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.programastic h4 {
+    font-size: 1.12rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.programastic .progra-buttons img.plus-grape {
+    width: 20px;
+    height: 18px;
+}
+
+.programastic .progra-buttons img.minus-grape {
+    display: none;
+    width: 20px;
+    height: 18px;
+}
+
+.product-one.active .progra-buttons img.plus-grape {
+    display: none;
+}
+
+.product-one.active .progra-buttons img.minus-grape {
+    display: block;
+}
+
+
+
+.product-one .develop-grape-display {
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.product-one.active .develop-grape-display{
+    height: 800px;
+    padding: 10px;
+}
+
+
+.develop-grape-display img.develop-display {
+    transform: rotate(-6deg);
+    position: relative;
+    left: 31%;
+    top: 10%;
+    width: 500px;
+    height: 650px;
+}
+
+.develop-grape-display img.develop-display-mobile {
+    display: none;
+}
+
+.ingredient-one-grape {
+    position: relative;
+    bottom: 550px;
+    left: 120px;
+    display: flex;
+    border: 1px solid #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 25%;
+}
+
+
+.ingredient-one-grape h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-one-grape p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+.ingredient-two-grape {
+    position: relative;
+    bottom: 750px;
+    left: 900px;
+    display: flex;
+    border: 1px solid #fff;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 25%;
+    height: 25%;
+}
+
+.ingredient-two-grape h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-two-grape p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+.ingredient-three-grape {
+    position: relative;
+    bottom: 420px;
+    left: 900px;
+    display: flex;
+    border: 1px solid #fff;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 25%;
+    height: 25%;
+}
+
+.ingredient-three-grape h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-three-grape p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+
+
+
+.product-two {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.creative {
+    padding: 25px;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+}
+
+.creative h6 {
+    font-size: 1.12rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.creative h4 {
+    font-size: 1.12rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+
+
+.creative .creative-buttons img.plus-lemon {
+    width: 20px;
+    height: 18px;
+}
+
+.creative .creative-buttons img.minus-lemon {
+    display: none;
+    width: 20px;
+    height: 18px;
+}
+
+.product-two.active .creative-buttons img.plus-lemon {
+    display: none;
+}
+
+.product-two.active .creative-buttons img.minus-lemon {
+    display: block;
+}
+
+
+
+.product-two .design-lemon-display {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.product-two.active .design-lemon-display{
+    height: 800px;
+    padding: 10px;
+}
+
+
+.design-lemon-display img.design-display-burger {
+    transform: rotate(-6deg);
+    position: relative;
+    left: 31%;
+    top: 10%;
+    width: 500px;
+    height: 650px;
+}
+
+.design-lemon-display img.design-display-burger-mobile {
+    display: none;
+}
+
+.ingredient-one-lemon {
+    position: relative;
+    bottom: 520px;
+    left: 120px;
+    display: flex;
+    border: 1px solid #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 25%;
+}
+
+.ingredient-one-lemon h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-one-lemon p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+.ingredient-two-lemon {
+    position: relative;
+    bottom: 720px;
+    left: 900px;
+    display: flex;
+    border: 1px solid #fff;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 25%;
+    height: 25%;
+}
+
+.ingredient-two-lemon h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-two-lemon p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+.ingredient-three-lemon {
+    position: relative;
+    bottom: 410px;
+    left: 870px;
+    display: flex;
+    border: 1px solid #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 25%;
+}
+
+.ingredient-three-lemon h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-three-lemon p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+
+
+
+.product-three {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.social {
+    padding: 25px;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+}
+
+.social h6 {
+    font-size: 1.12rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.social h4 {
+    font-size: 1.12rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.social .social-buttons img.plus-pine {
+    width: 20px;
+    height: 18px;
+}
+
+.social .social-buttons img.minus-pine {
+    display: none;
+    width: 20px;
+    height: 18px;
+}
+
+.product-three.active .social-buttons img.plus-pine {
+    display: none;
+}
+
+.product-three.active .social-buttons img.minus-pine {
+    display: block;
+}
+
+
+.product-three .social-pine-display {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.product-three.active .social-pine-display{
+    height: 800px;
+    padding: 10px;
+}
+
+
+.social-pine-display img.social-pine-display-burger {
+    transform: rotate(-6deg);
+    position: relative;
+    left: 29%;
+    top: 10%;
+    width: 500px;
+    height: 650px;
+}
+
+.social-pine-display img.social-pine-display-burger-mobile {
+    display: none;
+}
+
+.ingredient-one-pine {
+    position: relative;
+    bottom: 520px;
+    left: 90px;
+    display: flex;
+    border: 1px solid #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 25%;
+}
+
+.ingredient-one-pine h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-one-pine p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+
+.ingredient-two-pine {
+    position: relative;
+    bottom: 780px;
+    left: 860px;
+    display: flex;
+    border: 1px solid #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 25%;
+}
+
+.ingredient-two-pine h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-two-pine p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+.ingredient-three-pine {
+    position: relative;
+    bottom: 500px;
+    left: 830px;
+    display: flex;
+    border: 1px solid #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 25%;
+}
+
+
+.ingredient-three-pine h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.ingredient-three-pine p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+
+
+.product-four {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.marketing-orange {
+    padding: 25px;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+}
+
+.marketing-orange h6 {
+    font-size: 1.12rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.marketing-orange h4 {
+    font-size: 1.12rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.marketing-orange .marketing-buttons img.plus-orange {
+    width: 20px;
+    height: 18px;
+}
+
+.marketing-orange .marketing-buttons img.minus-orange {
+    display: none;
+    width: 20px;
+    height: 18px;
+}
+
+
+.product-four.active .marketing-buttons img.plus-orange {
+    display: none;
+}
+
+.product-four.active .marketing-buttons img.minus-orange {
+    display: block;
+}
+
+
+
+.product-four .marketing-orange-display {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.product-four.active .marketing-orange-display{
+    height: 800px;
+    padding: 10px;
+}
+
+
+.ingredient-one-oran {
+    position: relative;
+    bottom: 520px;
+    left: 120px;
+    display: flex;
+    border: 1px solid #fff;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 25%;
+}
+
+.ingredient-one-oran h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-one-oran p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+
+
+.ingredient-two-oran {
+    position: relative;
+    bottom: 280px;
+    left: 860px;
+    display: flex;
+    border: 1px solid #fff;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 25%;
+    height: 25%;
+}
+
+
+.ingredient-two-oran h4 {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ingredient-two-oran p {
+    margin: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+    color: #fff;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+
+
+
+
+.marketing-orange-display img.mar-orange-display-burger {
+    transform: rotate(-6deg);
+    position: relative;
+    left: 32%;
+    top: 10%;
+    width: 500px;
+    height: 650px;
+}
+
+.marketing-orange-display img.mar-orange-display-burger-mobile {
+    display: none;
+}
+
+
+
+.second-call-to-action {
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+    overflow: hidden;
+    background-color: #DB563B;
+
+}
+
+.try-out-two {
+    grid-area: 2 / 1 / 6 / 13;
+    display: flex;
+    justify-content: space-evenly;
+    height: 28vh;
+    transform: rotate(-2deg);
+    width: 1500px;
+    position: relative;
+    right: 10px;
+    align-items: center;
+    background-color: #E4B722;
+}
+
+.try-out-two h5 {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+
+}
+
+
+
+.try-out-two img.pineapple-two {
+    width: 135px;
+    height: 120px;
+}
+
+
+
+.ingredients {
+    display: grid;
+    grid-template: repeat(15, 1fr) / repeat(12, 1fr);
+    background-color: #A89BB5;
+}
+
+.ingre-container-text {
+    grid-area: 3 / 2 / 6 / 8;
+    position: relative;
+    bottom: 20px;
+}
+
+.ingre-container-text p {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    color: #fff;
+    text-align: justify;
+}
+
+.wireframes {
+    grid-area: 6 / 2 / 8 / 6;
+    position: relative;
+    top: 70px;
+    width: 90%;
+    height: 15vh;
+    background-color: #fff;
+    border-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.wireframes h6 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.css {
+    grid-area: 6 / 6 / 8 / 8;
+    width: 100%;
+    height: 32vh;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.css h2 {
+    font-size: 2.3rem;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.prototypes {
+    grid-area: 6 / 8 / 8 / 12;
+    position: relative;
+    top: 70px;
+    left: 40px;
+    width: 90%;
+    height: 15vh;
+    border-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.prototypes h6 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+
+.html {
+    grid-area: 9 / 2 / 11 / 4;
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    height: 32vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.html h2 {
+    font-size: 2.3rem;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.sem {
+    grid-area: 9 / 5 / 11 / 7;
+    width: 100%;
+    height: 15vh;
+    background-color: #fff;
+    position: relative;
+    right: 40px;
+    border-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 45px;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.sem h6 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.content-mkt {
+    grid-area: 11 / 5 / 14 / 8;
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    border-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 90px;
+    left: 65px;
+    background-color: #fff;
+     box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.content-mkt h6 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.social-media {
+    grid-area: 9 / 8 / 11 / 10;
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    border-radius: 62px;
+    bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 70px;
+    background-color: #fff;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.social-media h6 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.xd {
+    grid-area: 9 / 10 / 11 / 12;
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+    height: 32vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.xd h2 {
+    font-size: 2.3rem;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.branding {
+    grid-area: 12 / 2 / 15 / 5;
+    position: relative;
+    border-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5px;
+    width: 80%;
+    height: 15vh;
+    background-color: #fff;
+     box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.branding h6 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+
+.seo {
+    grid-area: 12 / 5 / 15 / 7;
+    position: relative;
+    bottom: 5px;
+    width: 90%;
+    height: 15vh;
+    border-radius: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.seo h6 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.button {
+    grid-area: 12 / 7 / 15 / 9;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    left: 40px;
+    width: 100%;
+    height: 32vh;
+    background-color: #fff;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.button:hover {
+    background-color: #E4B722;
+}
+
+.button button {
+    border: none;
+    background: none;
+}
+
+.button button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.button button a:hover {
+    color: #fff;
+}
+
+.java {
+    grid-area: 12 / 10 / 15 / 12;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 62px;
+    bottom: 5px;
+    width: 100%;
+    height: 15vh;
+    background-color: #fff;
+    box-shadow: 0.5px 0.2px 3.5px #000;
+}
+
+.java h6 {
+    font-size: 1.12rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+
+.contact-form {
+    display: grid;
+    grid-template: repeat(14, 1fr) / repeat(12, 1fr);
+    background-color: #A89BB5;
+}
+
+.container-form {
+    grid-area: 2 / 1 / 12 / 13;
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.contact-form .form-call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    border-radius: 50px;
+    padding-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    background-color: #2D2D32;
+}
+
+.contact-form .form-call-to-action h4 {
+    padding-left: 10px;
+    width: 70%;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+.contact-form .form-call-to-action p {
+    font-size: 1rem;
+    padding-left: 10px;
+    width: 80%;
+    color: #fff;
+}
+
+.container-form .form-submit {
+    width: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #2D2D32;
+}
+
+
+
+.container-form .form-submit form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    left: 15px;
+}
+
+.contact-form .form-submit form input {
+    padding: 15px;
+    width: 95%;
+    height: 10vh;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.contact-form .form-submit form input.submit {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    width: 30%;
+    background-color: #D3F7F3;
+    cursor: pointer;
+}
+
+.contact-form .form-submit form input.submit:hover {
+    background-color: #E4B722;
+}
+
+
+.footer {
+    display: grid;
+    grid-template: repeat(25, 1fr) / repeat(12, 1fr);
+    background-color: #A89BB5;
+}
+
+.footer .footer-box {
+    grid-area: 2 / 1 / 24 / 13;
+    height: 160vh;
+    background-color: #2D2D32;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .footer-box .footer-container-text{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer .footer-box .footer-container-text h2 {
+    font-size: 4rem;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.footer .footer-box .footer-container-text h6 {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #fff;
+}
+
+
+
+.footer .footer-container-contact-info {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer .footer-container-contact-info h6 {
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+
+
+.footer .footer-container-contact-info p {
+    width: 25%;
+    color: #fff;
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.footer .footer-nav {
+    position: relative;
+    bottom: 30px;
+    left: 50px;
+    width: 90%;
+    height: 10vh;
+}
+
+.footer .footer-nav ul {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer .footer-nav ul li {
+    list-style: none;
+}
+
+.footer .footer-nav ul li a  {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.6rem;
+}
+
+.footer-line-one {
+    grid-area: 21 / 1 / 21 / 13;
+    background-color: #fff;
+    position: relative;
+    left: 60px;
+    width: 90%;
+    height: 2px;
+}
+
+.footer-line-two {
+    grid-area: 17 / 4 / 21 / 4;
+    background-color: #fff;
+    height: 100%;
+    width: 2px;
+}
+
+.footer-line-three {
+    grid-area: 17 / 9 / 21 / 9;
+    background-color: #fff;
+    height: 100%;
+    width: 2px;
+}
+
+
+
+/*Responsive */
+
+@media only screen and (max-width: 1415px) {
+    .hero  img.lemon {
+        right: 30px;
+    }
+    .hero img.grape {
+        left: 10px;
+    }
+    .css {
+        height: 35vh;
+        width: 110%;
+    }
+    .html {
+        height: 35vh;
+        width: 110%;
+    }
+    .xd {
+        height: 35vh;
+        width: 110%;
+    }
+    .button {
+        height: 35vh;
+        width: 110%;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 60px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 60px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 60px;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 60px;
+    }
+
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 60px;
+    }
+
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 60px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1375px) {
+    .hero  img.lemon {
+        right: 10px;
+    }
+    .hero img.grape {
+        left: 20px;
+    }
+    .ingredient-one-grape {
+        left: 100px;
+    }
+
+    .ingredient-two-grape {
+      left: 880px;
+    }
+    .ingredient-three-grape {
+        left: 820px;
+    }
+    .ingredient-one-lemon {
+        left: 100px;
+    }
+    .ingredient-two-lemon {
+        left: 850px;
+    }
+    .ingredient-three-lemon {
+        left: 850px;
+    }
+    .ingredient-one-pine {
+        left: 70px;
+    }
+
+    .ingredient-two-pine {
+        left: 830px;
+    }
+
+    .ingredient-three-pine {
+        left: 820px;
+    }    
+    .ingredient-one-oran {
+        left: 110px;
+    }
+    .ingredient-two-oran {
+        left: 820px;
+    }
+}
+
+@media only screen and (max-width: 1349px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 7.4rem;
+        letter-spacing: 18px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 7.4rem;
+        letter-spacing: 18px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 7.4rem;
+        letter-spacing: 18px;
+        color: #fff;
+    }
+} 
+
+@media only screen and (max-width: 1310px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 7.3rem;
+        letter-spacing: 17px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 7.3rem;
+        letter-spacing: 17px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 7.3rem;
+        letter-spacing: 17px;
+        color: #fff;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 70px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 120px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 70px;
+    }
+    .ingredient-two-grape {
+        left: 820px;
+    }
+    .ingredient-three-grape {
+        left: 780px;
+    }
+    .ingredient-two-lemon {
+        left: 820px;
+    }
+    .ingredient-three-lemon {
+        left: 800px;
+    }
+    .ingredient-two-pine {
+        left: 810px;
+    }
+
+    .ingredient-three-pine {
+        left: 780px;
+    } 
+
+    .ingredient-two-oran {
+        left: 810px;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 70px;
+    }
+
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 120px;
+    }
+
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 70px;
+    }
+} 
+
+
+
+@media only screen and (max-width: 1285px) {
+    .products .develop-grape .develop-grape-about h2 {
+        font-size: 1.4rem;
+        letter-spacing: 2.3px;
+    }
+    .products .design-lemon .design-lemon-about h2 {
+        font-size: 1.4rem;
+        letter-spacing: 2.3px;
+    }
+    .products .media-pine .media-pine-about h2 {
+        font-size: 1.4rem;
+        letter-spacing: 2.3px;
+    }
+
+    .products .orange-mar .orange-mar-about h2 {
+        font-size: 1.4rem;
+        letter-spacing: 2.3px;
+    }
+    
+
+} 
+
+
+@media only screen and (max-width: 1280px) {
+    .products .products-intro-text h4 {
+        font-size: 2.4rem;
+        letter-spacing: 1.8px;
+    
+    }
+
+}
+
+
+@media only screen and (max-width: 1277px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 7.2rem;
+        letter-spacing: 15px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 7.2rem;
+        letter-spacing: 15px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 7.2rem;
+        letter-spacing: 15px;
+        color: #fff;
+    }
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 80px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 140px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 80px;
+    }
+    .ingre-container-text {
+        grid-area: 3 / 2 / 6 / 12;
+    }
+
+    .ingre-container-text p {
+        font-size: 1.8rem;
+        letter-spacing: 1.8px;
+        line-height: 3rem;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 80px;
+    }
+
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 140px;
+    }
+
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 1234px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 7.1rem;
+        letter-spacing: 14px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 7.1rem;
+        letter-spacing: 14px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 7.1rem;
+        letter-spacing: 14px;
+        color: #fff;
+    }
+}
+
+
+@media only screen and (max-width: 1230px) {
+    .first-call-to-action .try-out-one h5 {
+        font-size: 2.5rem;
+        letter-spacing: 6px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 2.5rem;
+        letter-spacing: 6px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1223px) {
+    .products .products-intro-text h4 {
+        font-size: 2.3rem;
+        letter-spacing: 1.7px;
+    }
+}
+
+
+@media only screen and (max-width: 1206px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 7rem;
+        letter-spacing: 14px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 7rem;
+        letter-spacing: 14px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 7rem;
+        letter-spacing: 14px;
+        color: #fff;
+    }
+    .products .develop-grape .develop-grape-about h2 {
+        font-size: 1.2rem;
+        letter-spacing: 2.2px;
+    }
+    .products .design-lemon .design-lemon-about h2 {
+        font-size: 1.2rem;
+        letter-spacing: 2.2px;
+    }
+    .products .media-pine .media-pine-about h2 {
+        font-size: 1.2rem;
+        letter-spacing: 2.2px;
+    }
+
+    .products .orange-mar .orange-mar-about h2 {
+        font-size: 1.2rem;
+        letter-spacing: 2.2px;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 50px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 250px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 150px;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 50px;
+    }
+
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 250px;
+    }
+
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 150px;
+    }
+
+}
+
+
+@media only screen and (max-width: 1192px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 6.8rem;
+        letter-spacing: 13px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 6.8rem;
+        letter-spacing: 13px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 6.8rem;
+        letter-spacing: 13px;
+        color: #fff;
+    }
+
+} 
+
+@media only screen and (max-width: 1170px) {
+    .hero  img.lemon {
+        width: 110px;
+        left: 5px;
+        height: 110px;
+    }
+    
+    .hero img.orange {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .hero img.grape {
+        width: 130px;
+        height: 145px;
+    }
+    .products .products-intro-text h4 {
+        font-size: 2.1rem;
+        letter-spacing: 1.5px;
+    }
+    .develop-grape-display img.develop-display {
+        left: 25%;
+    }
+    .ingredient-one-grape {
+        left: 40px;
+    }
+    .ingredient-two-grape {
+        left: 720px;
+    }
+    .ingredient-three-grape {
+        left: 700px;
+    }
+
+    .design-lemon-display img.design-display-burger {
+        left: 25%;
+   }
+   .ingredient-one-lemon {
+       left: 40px;
+   }
+   .ingredient-two-lemon {
+       left: 720px;
+    }
+    .ingredient-three-lemon {
+        left: 700px;
+    }
+    .social-pine-display img.social-pine-display-burger {
+        left: 25%;
+    }
+    .ingredient-one-pine {
+        left: 20px;
+    }
+    .ingredient-two-pine {
+        left: 720px;
+    }
+    .ingredient-three-pine {
+        left: 700px;
+    }
+    .marketing-orange-display img.mar-orange-display-burger {
+        left: 25%;
+    }
+    .ingredient-one-oran {
+        left: 40px;
+    }
+    .ingredient-two-oran {
+        left: 700px;
+    }
+    .css {
+        position: relative;
+        right: 20px;
+        width: 120%;
+    }
+    .html {
+        width: 120%;
+    }
+    .xd {
+        position: relative;
+        right: 20px;
+        width: 120%;
+    }
+    .button {
+        position: relative;
+        left: 20px;
+        width: 120%;
+    }
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 6.8rem;
+        letter-spacing: 11px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 6.8rem;
+        letter-spacing: 11px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 6.8rem;
+        letter-spacing: 11px;
+        color: #fff;
+    }
+
+} 
+
+@media only screen and (max-width: 1120px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 6.6rem;
+        letter-spacing: 11px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 6.6rem;
+        letter-spacing: 11px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 6.6rem;
+        letter-spacing: 11px;
+        color: #fff;
+    }
+
+} 
+
+
+@media only screen and (max-width: 1115px) {
+    .hero  img.lemon {
+        position: relative;
+        left: 0px;
+        right: 10px;
+        width: 99px;
+        height: 100px;
+    }
+    
+    .hero img.orange {
+        position: relative;
+        left: 8px;
+        width: 90px;
+        height: 90px;
+    }
+    
+    .hero img.grape {
+        width: 120px;
+        height: 135px;
+    }
+
+    .contact-form .form-call-to-action h4 {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 6.5rem;
+        letter-spacing: 10px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 6.5rem;
+        letter-spacing: 10px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 6.5rem;
+        letter-spacing: 10px;
+        color: #fff;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 80px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 320px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 200px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 80px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 200px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 320px;
+    }
+
+} 
+
+@media only screen and (max-width: 1063px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 6.3rem;
+        letter-spacing: 10px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 6.3rem;
+        letter-spacing: 10px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 6.3rem;
+        letter-spacing: 10px;
+        color: #fff;
+    }
+    .hero  img.lemon {
+        position: relative;
+        bottom: 27px;
+        left: 0px;
+        width: 95px;
+        height: 98px;
+    }
+    
+    .hero img.orange {
+        position: relative;
+        left: 8px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .hero img.grape {
+        position: relative;
+        left: 8px;
+        width: 120px;
+        height: 135px;
+    }
+    .products .products-intro-text h4 {
+        font-size: 2rem;
+        letter-spacing: 1.4px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .hero .hero-container-text {
+        grid-area: 2 / 1 / 10 / 13;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hero img.lemon {
+        left: 90px;
+        bottom: 40px;
+    }
+    .hero img.orange {
+        left: 140px;
+    }
+    .hero img.grape {
+        left: 20px;
+    }
+    .products {
+        display: grid;
+        grid-template: repeat(32, 1fr) / repeat(12, 1fr);
+    }
+    .products .develop-grape {
+        grid-area: 7 / 2 / 17 / 6;
+        width: 100%;
+        height: 75vh;
+        left: 10px;
+    }
+    .products .design-lemon {
+        grid-area: 7 / 7 / 17 / 11;
+        width: 100%;
+        height: 75vh;
+        left: 80px;
+    }
+
+    .products .media-pine {
+        grid-area: 20 / 2 / 30 / 6;
+        width: 100%;
+        height: 75vh;
+        left: 10px;
+    }
+    .products .orange-mar {
+        grid-area: 20 / 7 / 30 / 11;
+        width: 100%;
+        height: 75vh;
+        position: relative;
+        left: 80px;
+    }
+    .develop-grape-display {
+        display: flex;
+    }
+    .develop-grape-display img.develop-display {
+        display: none;
+    }
+    .develop-grape-display .grape-container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .develop-grape-display img.develop-display-mobile {
+        display: block;
+        position: relative;
+        bottom: 20px;
+        left: 0px;
+        width: 520px;
+        height: 800px;
+    }
+    .grape-ingre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .ingredient-one-grape {
+        position: relative;
+        padding-top: 10px;
+        margin-top: 10px;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 25%;
+    }
+    .ingredient-two-grape {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+        height: 25%;
+    }
+    .ingredient-three-grape {
+        bottom: 0px;
+        left: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .design-lemon-display {
+        display: flex;
+    }
+    .design-lemon-display img.design-display-burger {
+        display: none;
+    }
+
+    .design-lemon-display .lemon-container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .design-lemon-display img.design-display-burger-mobile {
+        display: block;
+        position: relative;
+        bottom: 10px;
+        left: 0px;
+        width: 520px;
+        height: 800px;
+    }
+
+    .lemon-ingre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .ingredient-one-lemon {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 25%;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .ingredient-two-lemon {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+        height: 25%;
+    }
+    .ingredient-three-lemon {
+        bottom: 0px;
+        left: 0px;
+        width: 90%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .social-pine-display {
+        display: flex;
+    }
+    .social-pine-display .pine-container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .social-pine-display img.social-pine-display-burger {
+        display: none;
+    }
+    
+    .social-pine-display img.social-pine-display-burger-mobile {
+        display: block;
+        position: relative;
+        bottom: 10px;
+        left: 0px;
+        width: 520px;
+        height: 800px;
+    }
+    .pine-ingre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .ingredient-one-pine {
+        padding-top: 10px;
+        margin-top: 10px;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 25%;
+    }
+    .ingredient-two-pine {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+        height: 25%;
+    }
+    .ingredient-three-pine {
+        bottom: 0px;
+        left: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .marketing-orange-display {
+        display: flex;
+    }
+    .marketing-orange-display .orange-container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .marketing-orange-display img.mar-orange-display-burger {
+        display: none;
+    }
+    
+    .marketing-orange-display img.mar-orange-display-burger-mobile {
+        display: block;
+        position: relative;
+        bottom: 10px;
+        left: 0px;
+        width: 520px;
+        height: 800px;
+    }
+    .orange-ingre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .ingredient-one-oran {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 25%;
+    }
+    .ingredient-two-oran {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+        height: 25%;
+    }
+    .ingredients {
+        display: grid;
+        grid-template: repeat(26, 1fr) / repeat(12, 1fr);
+    }
+    .wireframes {
+        grid-area: 6 / 2 / 8 / 8;
+        height: 20vh;
+        width: 100%;
+    }
+    .css {
+        grid-area: 6 / 9 / 9 / 11;
+        width: 160%;
+        height: 40vh;
+    }
+    .prototypes {
+        grid-area: 16 / 2 / 18 / 12;
+        height: 20vh;
+        width: 100%;
+        top: 40px;
+        left: 0px;
+    }
+    .html {
+        grid-area: 9 / 2 / 12 / 4;
+        width: 160%;
+        height: 40vh;
+        top: 45px;
+    }
+    .sem {
+        grid-area: 9 / 6 / 11 / 9;
+        width: 150%;
+        left: 10px;
+        height: 20vh;
+        top: 25px;
+    }
+    .content-mkt {
+        grid-area: 13 / 5 / 16 / 11;
+        bottom: 120px;
+        height: 20vh;
+    }
+    .social-media {
+        grid-area: 19 / 2 / 21 / 8;
+        bottom: 0px;
+        right: 10px;
+        height: 20vh;
+        width: 100%;
+    }
+    .xd {
+        grid-area: 19 / 9 / 24 / 11;
+        width: 160%;
+        height: 40vh;
+        bottom: 0px;
+    }
+    .branding {
+        grid-area: 14 / 2 / 17 / 7;
+        height: 20vh;
+        bottom: 0px;
+        top: 0px;
+    }
+    .seo {
+        grid-area: 14 / 7 / 17 / 11;
+        width: 120%;
+        height: 20vh;
+    }
+    .button {
+        grid-area: 22 / 2 / 25 / 4;
+        width: 160%;
+        height: 40vh;
+    }
+    .java {
+        grid-area: 23 / 6 / 26 / 12;
+        height: 20vh;
+    }
+}
+
+
+@media only screen and (max-width: 1020px) {
+    .first-call-to-action .try-out-one h5 {
+        font-size: 2.3rem;
+        letter-spacing: 5px;
+    }
+    .products .products-intro-text h4 {
+        font-size: 2rem;
+        letter-spacing: 1.2px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 2.3rem;
+        letter-spacing: 5px;
+    }
+    .contact-form {
+        display: grid;
+        grid-template: repeat(24, 1fr) / repeat(12, 1fr);;
+    }
+    .container-form {
+        grid-area: 2 / 1 / 23 / 13;
+        flex-direction: column;
+        height: 200vh;
+        overflow: hidden;
+    }
+    .contact-form .form-call-to-action {
+        width: 100%;
+        height: 90vh;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 40px;
+        font-size: 3rem;
+    }
+    
+    .contact-form .form-call-to-action p {
+        padding-left: 40px;
+    }
+    .container-form .form-submit {
+        width: 100%;
+        height: 100vh;
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 120px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 390px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 240px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 120px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 390px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 240px;
+    }
+    .products .develop-grape {
+        grid-area: 7 / 2 / 17 / 7;
+        width: 95%;
+        height: 75vh;
+        left: 0px;
+    }
+    .products .design-lemon {
+        grid-area: 7 / 6 / 17 / 11;
+        width: 100%;
+        height: 75vh;
+        left: 80px;
+    }
+    .products .media-pine {
+        grid-area: 20 / 2 / 30 / 7;
+        width: 95%;
+        left: 0px;
+    }
+    .products .orange-mar {
+        grid-area: 20 / 6 / 30 / 11;
+        left: 80px;
+    }
+    .products .develop-grape .develop-grape-about h2 {
+        font-size: 1.5rem;
+        letter-spacing: 2.2px;
+    }
+    .products .design-lemon .design-lemon-about h2 {
+        font-size: 1.5rem;
+        letter-spacing: 2.2px;
+    }
+    .products .media-pine .media-pine-about h2 {
+        font-size: 1.5rem;
+        letter-spacing: 2.2px;
+    }
+    .products .orange-mar .orange-mar-about h2 {
+        font-size: 1.5rem;
+        letter-spacing: 2.2px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .products .products-intro-text h4 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+    }
+    .hero img.lemon {
+        left: 100px;
+        bottom: 40px;
+    }
+    .hero img.orange {
+        left: 120px;
+    }
+    .hero img.grape {
+        left: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 986px) {
+    .products .products-intro-text {
+        grid-area: 2 / 2 / 6 / 12;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .products .products-intro-text h4 {
+        font-size: 1.8rem;
+        letter-spacing: 0.9px;
+        text-align: justify;
+        line-height: 2.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .ingre-container-text p {
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+        line-height: 2.8rem;
+    }
+}
+
+
+@media only screen and (max-width: 930px) {
+    .first-call-to-action .try-out-one h5 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+    .try-out-one img.pineapple {
+        width: 120px;
+        height: 110px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 255px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 255px;
+    }
+    .try-out-two img.pineapple-two {
+        width: 120px;
+        height: 110px;
+    }
+    .css {
+        width: 180%;
+    }
+    .html {
+        width: 180%;
+        right: 20px;
+    }
+    .xd {
+        width: 180%;
+    }
+    .button {
+        width: 180%;
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 6rem;
+        letter-spacing: 9px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 6rem;
+        letter-spacing: 9px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 6rem;
+        letter-spacing: 9px;
+        color: #fff;
+    }
+    .hero img.orange {
+        left: 110px;
+    }
+    .hero img.grape {
+        left: 5px;
+    }
+    .hero img.grape {
+        width: 110px;
+        height: 110px;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 160px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 290px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 440px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 160px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 300px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 440px;
+    }
+} 
+
+
+@media only screen and (max-width: 860px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 5.8rem;
+        letter-spacing: 9px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 5.8rem;
+        letter-spacing: 9px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 5.8rem;
+        letter-spacing: 9px;
+        color: #fff;
+    }
+    .develop-grape-display img.develop-display-mobile {
+        width: 500px;
+        height: 700px;
+    }
+    .design-lemon-display img.design-display-burger-mobile {
+        width: 500px;
+        height: 700px;
+    }
+    .social-pine-display img.social-pine-display-burger-mobile {
+        width: 500px;
+        height: 700px;
+    }
+    .marketing-orange-display img.mar-orange-display-burger-mobile {
+        width: 500px;
+        height: 700px;
+    }
+    .footer-line-one {
+        grid-area: 21 / 1 / 21 / 13;
+        background-color: #fff;
+        position: relative;
+        left: 45px;
+        width: 90%;
+        height: 2px;
+    }
+}
+
+@media only screen and (max-width: 855px) {
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 180px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 320px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 470px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 180px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 320px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 470px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 5.4rem;
+        letter-spacing: 7px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 5.4rem;
+        letter-spacing: 7px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 5.4rem;
+        letter-spacing: 7px;
+        color: #fff;
+    }
+    .hero img.orange {
+        left: 80px;
+    }
+    .hero img.lemon {
+        left: 85px;
+        bottom: 40px;
+    }
+    .hero img.grape {
+        left: -10px;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 160px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 340px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 510px;
+    }
+    .products {
+        display: grid;
+        grid-template: repeat(55, 1fr) / repeat(12, 1fr);
+    }
+    .products .develop-grape {
+        grid-area: 8 / 3 / 18 / 11;
+        width: 100%;
+        height: 75vh;
+        left: 0px;
+    }
+    .products .design-lemon {
+        grid-area:20 / 3 / 30 / 11;
+        width: 100%;
+        height: 75vh;
+        left: 0px;
+    }
+    .products .media-pine {
+        grid-area: 32 / 3 / 42 / 11;
+        width: 100%;
+        left: 0px;
+    }
+    .products .orange-mar {
+        grid-area: 44 / 3 / 54 / 11;
+        width: 100%;
+        left: 0px;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 160px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 340px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 530px;
+    }
+    .css {
+        width: 190%;
+    }
+    .html {
+        width: 190%;
+        right: 20px;
+    }
+    .xd {
+        width: 190%;
+    }
+    .button {
+        width: 190%;
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .ingre-container-text p {
+        font-size: 1.4rem;
+        letter-spacing: 1.4px;
+        line-height: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .first-call-to-action .try-out-one h5 {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 540px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 360px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .css {
+        width: 200%;
+        right: 40px;
+        height: 38vh;
+    }
+    .html {
+        height: 38vh;
+    }
+    .xd {
+        height: 38vh;
+    }
+    .button {
+        height: 38vh;
+    }
+    .button {
+        width: 200%;
+        left: -35px;
+    }
+    .xd {
+        width: 200%;
+        right: 50px;
+    }
+    .html {
+        width: 200%;
+    }
+    .develop-grape-display img.develop-display-mobile {
+        width: 450px;
+        height: 600px;
+    }
+    .design-lemon-display img.design-display-burger-mobile {
+        width: 450px;
+        height: 600px;
+    }
+    .social-pine-display img.social-pine-display-burger-mobile {
+        width: 450px;
+        height: 600px;
+    }
+    .marketing-orange-display img.mar-orange-display-burger-mobile {
+        width: 450px;
+        height: 600px;
+    }
+
+
+}
+
+@media only screen and (max-width: 740px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 5.3rem;
+        letter-spacing: 6px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 5.3rem;
+        letter-spacing: 6px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 5.3rem;
+        letter-spacing: 6px;
+        color: #fff;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 180px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 360px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 570px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 370px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 200px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 380px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 580px;
+    }
+} 
+
+@media only screen and (max-width: 718px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 5.1rem;
+        letter-spacing: 5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 5.1rem;
+        letter-spacing: 5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 5.1rem;
+        letter-spacing: 5px;
+        color: #fff;
+    }
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 400px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 600px;
+    }
+    .product-one.active .develop-grape-display{
+        height: 1000px;
+        padding: 10px;
+    }
+    .develop-grape-display {
+        display: flex;
+        flex-direction: column;
+    }
+    .develop-grape-display img.develop-display {
+        display: none;
+    }
+    .develop-grape-display .grape-container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+    }
+    .develop-grape-display img.develop-display-mobile {
+        display: block;
+        position: relative;
+        bottom: 20px;
+        left: 0px;
+        width: 380px;
+        height: 550px;
+    }
+    .grape-ingre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 60%;
+    }
+
+    .ingredient-one-grape {
+        position: relative;
+        padding-top: 10px;
+        margin-top: 10px;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 30%;
+    }
+    .ingredient-two-grape {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+        height: 30%;
+    }
+    .ingredient-three-grape {
+        bottom: 0px;
+        left: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        height: 30%;
+    }
+    .product-two.active .design-lemon-display{
+        height: 1000px;
+        padding: 10px;
+    }
+    .design-lemon-display {
+        display: flex;
+        flex-direction: column;
+    }
+    .design-lemon-display img.design-display-burger {
+        display: none;
+    }
+
+    .design-lemon-display .lemon-container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+    }
+    
+    .design-lemon-display img.design-display-burger-mobile {
+        display: block;
+        position: relative;
+        bottom: 10px;
+        left: 0px;
+        width: 380px;
+        height: 550px;
+    }
+
+    .lemon-ingre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 60%;
+    }
+
+    .ingredient-one-lemon {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 30%;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .ingredient-two-lemon {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+        height: 30%;
+    }
+    .ingredient-three-lemon {
+        bottom: 0px;
+        left: 0px;
+        width: 90%;
+        height: 30%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .product-three.active .social-pine-display{
+        height: 1000px;
+        padding: 10px;
+    }
+    
+
+    .social-pine-display {
+        display: flex;
+        flex-direction: column;
+    }
+    .social-pine-display .pine-container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+    }
+    .social-pine-display img.social-pine-display-burger {
+        display: none;
+    }
+    
+    .social-pine-display img.social-pine-display-burger-mobile {
+        display: block;
+        position: relative;
+        bottom: 10px;
+        left: 0px;
+        width: 380px;
+        height: 550px;
+    }
+    .pine-ingre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 60%;
+    }
+    .ingredient-one-pine {
+        padding-top: 10px;
+        margin-top: 10px;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 30%;
+    }
+    .ingredient-two-pine {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 90%;
+        height: 30%;
+    }
+    .ingredient-three-pine {
+        bottom: 0px;
+        left: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 90%;
+        height: 30%;
+    }
+    .product-four.active .marketing-orange-display{
+        height: 1000px;
+        padding: 10px;
+    }
+    .marketing-orange-display {
+        display: flex;
+        flex-direction: column;
+    }
+    .marketing-orange-display .orange-container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40%;
+    }
+    .marketing-orange-display img.mar-orange-display-burger {
+        display: none;
+    }
+    
+    .marketing-orange-display img.mar-orange-display-burger-mobile {
+        display: block;
+        position: relative;
+        bottom: 10px;
+        left: 0px;
+        width: 380px;
+        height: 550px;
+    }
+    .orange-ingre {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 60%;
+    }
+    .ingredient-one-oran {
+        position: relative;
+        bottom: 0px;
+        top: 80px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 30%;
+    }
+    .ingredient-two-oran {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 90%;
+        height: 30%;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 200px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 400px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 600px;
+    }
+
+    .ingredients {
+        display: grid;
+        grid-template: repeat(28, 1fr) / repeat(12, 1fr);
+    }
+    .wireframes {
+        grid-area: 6 / 2 / 8 / 12;
+    }
+    .css {
+        grid-area: 9 / 2 / 12 / 4;
+        right: 35px;
+        width: 240%;
+        height: 39vh;
+        top: 40px;
+    }
+    .prototypes {
+        display: none;
+    }
+    .html {
+        grid-area: 16 / 2 / 19 / 4;
+        width: 230%;
+        height: 39vh;
+        left: 10px;
+    }
+    .sem {
+        grid-area: 9 / 7 / 11 / 10;
+    }
+    .content-mkt {
+        grid-area: 13 / 5 / 16 / 11;
+    }
+    .social-media {
+        grid-area: 23 / 2 / 25 / 7;
+        width: 100%;
+
+    }
+    .xd {
+        grid-area: 16 / 8 / 19 / 10;
+        width: 230%;
+        height: 39vh;
+        top: 45px;
+        right: 30px;
+    }
+    .branding {
+        grid-area: 14 / 2 / 17 / 12;
+        width: 100%;
+    }
+    .seo {
+        grid-area: 21 / 2 / 24 / 12;
+        width: 100%;
+        bottom: 40px;
+    }
+    .button {
+        grid-area: 24 / 8 / 27 / 10;
+        width: 210%;
+    }
+    .java {
+        grid-area: 25 / 2 / 28 / 7;
+        top: 40px;
+    }
+    .contact-form .form-call-to-action h4 {
+        width: 100%;
+        padding-left: 10px;
+    }
+    .footer .footer-container-contact-info p {
+        width: 25%;
+        color: #fff;
+        text-align: justify;
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 4.9rem;
+        letter-spacing: 4.8px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 4.9rem;
+        letter-spacing: 4.8px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 4.9rem;
+        letter-spacing: 4.8px;
+        color: #fff;
+    }
+    .products .develop-grape {
+        grid-area: 8 / 2 / 18 / 12;
+        width: 100%;
+        height: 75vh;
+        left: 0px;
+    }
+    .products .develop-grape .develop-bottle img {
+        height: 300px;
+        width: 140px;
+    }
+    .products .design-lemon {
+        grid-area:20 / 2 / 30 / 12;
+        width: 100%;
+        height: 75vh;
+        left: 0px;
+    }
+    .products .design-lemon .lemon-bottle img {
+        height: 300px;
+        width: 140px;
+    }
+    .products .media-pine {
+        grid-area: 32 / 2 / 42 / 12;
+        width: 100%;
+        left: 0px;
+    }
+    .products .media-pine .pine-bottle img {
+        height: 300px;
+        width: 140px;
+    }
+    .products .orange-mar .oran-bottle img {
+        height: 300px;
+        width: 140px;
+    }
+    .products .orange-mar {
+        grid-area: 44 / 2 / 54 / 12;
+        width: 100%;
+        left: 0px;
+    }
+    .button {
+        grid-area: 24 / 8 / 27 / 10;
+        width: 220%;
+    }
+    .footer .footer-nav {
+        left: 30px;
+    }
+    .footer .footer-container-contact-info {
+        left: 30px;
+    }
+} 
+
+@media only screen and (max-width: 670px) {
+   .first-call-to-action .try-out-one h5 {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+   }
+   .first-call-to-action .try-out-one h5.two {
+      position: relative;
+      right: 640px;
+    }
+   .first-call-to-action .try-out-one img.pineapple {
+      position: relative;
+      right: 410px;
+   }
+   .try-out-one img.pineapple {
+      width: 110px;
+      height: 100px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+    }
+    .try-out-two img.pineapple-two {
+        width: 110px;
+        height: 100px;
+      }
+}
+
+@media only screen and (max-width: 658px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 4.5rem;
+        letter-spacing: 6px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 4.5rem;
+        letter-spacing: 6px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 4.5rem;
+        letter-spacing: 6px;
+        color: #fff;
+    }
+    .hero img.lemon {
+        left: 70px;
+        bottom: 30px;
+        width: 70px;
+        height: 68px;
+    }
+    .hero img.orange {
+        width: 55px;
+        height: 52px;
+    }
+    .hero img.grape {
+        width: 95px;
+        height: 100px;
+        left: -2px;
+    }
+
+    
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 650px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 430px;
+    }
+    .html {
+        grid-area: 16 / 2 / 19 / 4;
+        width: 240%;
+        height: 39vh;
+        left: 0px;
+    }
+    .xd {
+        grid-area: 16 / 8 / 19 / 10;
+        width: 240%;
+        height: 39vh;
+        top: 45px;
+        right: 30px;
+    }
+    .footer-line-one {
+        grid-area: 21 / 1 / 21 / 13;
+        background-color: #fff;
+        position: relative;
+        left: 40px;
+        width: 90%;
+        height: 2px;
+    }
+}
+
+
+@media only screen and (max-width: 630px) {
+    .footer .footer-container-contact-info {
+        position: relative;
+        top: 50px;
+        left: 30px;
+        width: 90%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer .footer-container-contact-info p {
+        width: 100%;
+        color: #fff;
+        text-align: right;
+        font-size: 0.7rem;
+    }
+    .footer-line-one {
+        grid-area: 18 / 1 / 18 / 13;
+        left: 75px;
+        width: 80%;
+    }
+    .footer-line-two {
+        display: none;
+    }
+    .footer-line-three {
+        display: none;
+    }
+    .footer .footer-nav {
+        height: 20%;
+    }
+    .footer .footer-nav ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .footer .footer-nav ul li {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 622px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 4.2rem;
+        letter-spacing: 5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 4.2rem;
+        letter-spacing: 5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 4.2rem;
+        letter-spacing: 5px;
+        color: #fff;
+    }
+
+    .products .products-intro-text h4 {
+        font-size: 1.6rem;
+        letter-spacing: 0.9px;
+        line-height: 2.6rem;
+    }
+}
+
+
+@media only screen and (max-width: 615px) {
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 430px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 660px;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 20px;
+        font-size: 3rem;
+    }
+    .wireframes {
+        grid-area: 7 / 2 / 9 / 12;
+        bottom: 20px;
+        top: 0px;
+    }
+    .html {
+        grid-area: 16 / 2 / 19 / 4;
+        width: 230%;
+        height: 36vh;
+        left: 0px;
+    }
+    .xd {
+        grid-area: 16 / 8 / 19 / 10;
+        width: 230%;
+        height: 36vh;
+        top: 45px;
+        right: 30px;
+    }
+    .css {
+        grid-area: 9 / 2 / 12 / 4;
+        right: 35px;
+        width: 230%;
+        height: 36vh;
+        top: 40px;
+    }
+    .button {
+        grid-area: 24 / 8 / 27 / 10;
+        width: 240%;
+        height: 40vh;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    header nav {
+        grid-area: 1 / 5 / 3 / 12;
+    }
+    .hero img.lemon {
+        left: 70px;
+        bottom: 30px;
+        width: 70px;
+        height: 68px;
+    }
+    .hero img.orange {
+        width: 55px;
+        height: 52px;
+        left: 70px;
+    }
+    .hero img.grape {
+        width: 95px;
+        height: 100px;
+        left: -2px;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 225px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 460px;
+        width: 100px;
+        height: 90px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 680px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 220px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 450px;
+        width: 100px;
+        height: 90px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 670px;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        font-size: 2.5rem;
+    }
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 3.5rem;
+        letter-spacing: 3.5px;
+        color: #fff;
+    }
+   
+}
+
+@media only screen and (max-width: 575px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 4rem;
+        letter-spacing: 4.5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 4rem;
+        letter-spacing: 4.5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 4rem;
+        letter-spacing: 4.5px;
+        color: #fff;
+    }
+    .hero img.grape {
+        width: 90px;
+        height: 90px;
+        left: -5px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 1.4rem;
+        letter-spacing: 1.8px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 1.4rem;
+        letter-spacing: 1.8px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 690px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 690px;
+    }
+    .html {
+        grid-area: 16 / 2 / 19 / 4;
+        width: 230%;
+        height: 35vh;
+        left: 0px;
+        font-size: 2rem;
+    }
+    .xd {
+        grid-area: 16 / 8 / 19 / 10;
+        width: 230%;
+        height: 35vh;
+        top: 45px;
+        right: 30px;
+        font-size: 2rem;
+    }
+    .css {
+        grid-area: 9 / 2 / 12 / 4;
+        right: 35px;
+        width: 230%;
+        height: 34vh;
+        top: 40px;
+        font-size: 2rem;
+    }
+    .button {
+        grid-area: 24 / 8 / 27 / 10;
+        width: 240%;
+        height: 35vh;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 3.8rem;
+        letter-spacing: 4.1px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 3.8rem;
+        letter-spacing: 4.1px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 3.8rem;
+        letter-spacing: 4.1px;
+        color: #fff;
+    }
+    .hero img.lemon {
+        left: 60px;
+        bottom: 30px;
+        width: 70px;
+        height: 68px;
+    }
+    .hero img.orange {
+        width: 55px;
+        height: 52px;
+        left: 60px;
+    }
+    .hero img.grape {
+        width: 80px;
+        height: 80px;
+        top: 20px;
+        left: -10px;
+    }
+    .products .products-intro-text h4 {
+        font-size: 1.4rem;
+        letter-spacing: 0.9px;
+        line-height: 2.6rem;
+    }
+    .xd {
+        grid-area: 16 / 8 / 19 / 10;
+        width: 240%;
+        height: 35vh;
+        top: 45px;
+        right: 30px;
+        font-size: 2rem;
+    }
+    .html {
+        grid-area: 16 / 2 / 19 / 4;
+        width: 240%;
+        height: 35vh;
+        left: 0px;
+        font-size: 2rem;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        font-size: 2.5rem;
+    }
+    
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 3.4rem;
+        letter-spacing: 2px;
+        color: #fff;
+    }
+    .footer-line-one {
+        grid-area: 18 / 1 / 18 / 13;
+        left: 65px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 710px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 470px;
+        width: 100px;
+        height: 90px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 470px;
+        width: 100px;
+        height: 90px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 720px;
+    }
+    .ingre-container-text p {
+        font-size: 1.2rem;
+        letter-spacing: 1.3px;
+        line-height: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 3.5rem;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 3.5rem;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 3.5rem;
+        letter-spacing: 4px;
+        color: #fff;
+    }
+    .hero img.lemon {
+        left: 50px;
+        bottom: 20px;
+        width: 60px;
+        height: 58px;
+    }
+    .hero img.orange {
+        width: 55px;
+        height: 50px;
+        left: 60px;
+    }
+    .hero img.grape {
+        width: 70px;
+        height: 70px;
+        top: 20px;
+        left: -5px;
+    }
+
+
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 485px;
+        width: 90px;
+        height: 80px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 740px;
+    }
+    .programastic h4 {
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .creative h4 {
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .social h4 {
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .marketing-orange h4 {
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 230px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 485px;
+        width: 90px;
+        height: 80px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 740px;
+    }
+    .css {
+        grid-area: 9 / 2 / 12 / 4;
+        right: 35px;
+        width: 230%;
+        height: 31vh;
+        top: 40px;
+        font-size: 2rem;
+    }
+    .html {
+        grid-area: 16 / 2 / 19 / 4;
+        width: 235%;
+        height: 31vh;
+        left: 0px;
+        font-size: 2rem;
+    }
+    .xd {
+        grid-area: 16 / 8 / 19 / 10;
+        width: 235%;
+        height: 31vh;
+        top: 45px;
+        right: 30px;
+        font-size: 2rem;
+    }
+    .button {
+        grid-area: 24 / 8 / 27 / 10;
+        width: 235%;
+        height: 31vh;
+    }
+    .contact-form .form-call-to-action p {
+        padding-left: 20px;
+    }
+    .footer .footer-box .footer-container-text {
+        position: relative;
+        top: 30px;
+        left: 40px;
+        width: 90%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .footer .footer-container-contact-info {
+        position: relative;
+        top: 50px;
+        left: 10px;
+        width: 90%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer-line-one {
+        grid-area: 18 / 1 / 18 / 13;
+        left: 40px;
+        width: 80%;
+    }
+    .footer .footer-nav {
+        left: 20px;
+    }
+
+} 
+
+@media only screen and (max-width: 500px) { 
+    header a.logo {
+        font-size: 1rem;
+    }
+    header nav ul {
+        font-size: 0.8rem;
+    }
+    .hero img.lemon {
+        left: 60px;
+        bottom: 20px;
+        width: 60px;
+        height: 58px;
+    }
+
+     .css {
+        grid-area: 9 / 2 / 12 / 4;
+        right: 20px;
+        width: 230%;
+        height: 31vh;
+        top: 40px;
+    }
+    .css h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+    .html {
+        grid-area: 16 / 2 / 19 / 4;
+        width: 235%;
+        height: 31vh;
+        left: 0px;
+    }
+    .html h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+    .xd {
+        grid-area: 16 / 8 / 19 / 10;
+        width: 235%;
+        height: 31vh;
+        top: 45px;
+        right: 30px;
+    }
+    .xd h2 {
+        font-size: 2rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+    .button {
+        grid-area: 24 / 8 / 27 / 10;
+        width: 235%;
+        height: 31vh;
+    }
+    .contact-form .form-call-to-action {
+        border-radius: 0px;
+    }
+    .container-form .form-submit {
+        border-radius: 0px;
+    }
+    .footer .footer-box {
+        border-radius: 0px;
+    }
+    .contact-form .form-call-to-action p {
+        font-size: 0.9rem;
+    }
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 3.2rem;
+        letter-spacing: 1.8px;
+        color: #fff;
+    }
+    .footer .footer-box .footer-container-text {
+        left: 30px;
+    }
+    .contact-form .form-submit form input.submit {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        width: 95%;
+        background-color: #D3F7F3;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 240px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 500px;
+        width: 90px;
+        height: 80px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 760px;
+    }
+    .products .products-intro-text h4 {
+        font-size: 1.3rem;
+        letter-spacing: 0.9px;
+        line-height: 2.6rem;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 250px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 1.3rem;
+        letter-spacing: 1.5px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 500px;
+        width: 90px;
+        height: 80px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 760px;
+    }
+}
+
+@media only screen and (max-width: 487px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 3.3rem;
+        letter-spacing: 3.5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 3.3rem;
+        letter-spacing: 3.5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 3.3rem;
+        letter-spacing: 3.5px;
+        color: #fff;
+    }
+    .hero img.lemon {
+        left: 50px;
+        bottom: 20px;
+        width: 60px;
+        height: 58px;
+    }
+
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .wireframes h6 {
+        font-size: 1rem;
+    }
+    .sem h6 {
+        font-size: 1rem;
+    }
+    .content-mkt h6 {
+        font-size: 1rem;
+    }
+    .social-media h6 {
+        font-size: 1rem;
+    }
+    .branding h6 {
+        font-size: 1rem;
+    }
+    .seo h6 {
+        font-size: 1rem;
+    }
+    .java h6 {
+        font-size: 1rem;
+    }
+    .button button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+    .css {
+        grid-area: 9 / 2 / 12 / 4;
+        right: 20px;
+        width: 240%;
+        height: 31vh;
+    }
+    .css h2 {
+        font-size: 1.8rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+    .html {
+        grid-area: 16 / 2 / 19 / 4;
+        width: 240%;
+        height: 31vh;
+        left: 0px;
+    }
+    .html h2 {
+        font-size: 1.8rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+    .xd {
+        grid-area: 16 / 8 / 19 / 10;
+        width: 240%;
+        height: 31vh;
+        top: 45px;
+        right: 30px;
+    }
+    .xd h2 {
+        font-size: 1.8rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+@media only screen and (max-width: 468px) {
+    header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.6rem;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 255px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 510px;
+        width: 90px;
+        height: 80px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 770px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 255px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 510px;
+        width: 90px;
+        height: 80px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 770px;
+    }
+    .ingre-container-text p {
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+        line-height: 2.1rem;
+    }
+    .css {
+        grid-area: 26 / 2 / 29 / 4;
+        height: 28vh;
+        width: 230%;
+        top: 0px;
+    }
+
+    .sem {
+        grid-area: 9 / 2 / 11 / 12;
+        left: 0px;
+        width: 100%;
+        bottom: 0px;
+        top: 10px;
+    }
+    .html {
+        grid-area: 16 / 2 / 19 / 4;
+        top: 5px;
+        height: 28vh;
+        width: 230%;
+    }
+    .xd {
+        grid-area: 16 / 8 / 19 / 10;
+        height: 28vh;
+        width: 230%;
+        top: 5px;
+        right: 30px;
+    }
+    .content-mkt {
+        grid-area: 14 / 2 / 17 / 12;
+        bottom: 180px;
+        left: 0px;
+    }
+    .branding {
+        grid-area: 14 / 2 / 17 / 12;
+        width: 100%;
+        top: -30px;
+        bottom: 0px;
+    }
+    .seo {
+        grid-area: 20 / 2 / 23 / 12;
+        width: 100%;
+        bottom: 70px;
+    }
+    .social-media {
+        grid-area: 22 / 2 / 24 / 12;
+        width: 100%;
+        bottom: 59px;
+        left: 5px;
+        width: 100%;
+    }
+    .button {
+        grid-area: 26 / 5 / 29 / 7;
+        left: 80px;
+        height: 28vh;
+        width: 230%;
+        top: 0px;
+    }
+    .java {
+        grid-area: 23 / 2 / 26 / 12;
+        width: 100%;
+        top: 20px;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+        .ingredient-one-grape {
+        position: relative;
+        padding-top: 10px;
+        margin-top: 10px;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 30%;
+    }
+    .ingredient-two-grape {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+    }
+    .ingredient-three-grape {
+        bottom: 0px;
+        left: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 30%;
+    }
+    .ingredient-one-lemon {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 30%;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    .ingredient-two-lemon {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+    }
+    .ingredient-three-lemon {
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 30%;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    .ingredient-one-pine {
+        padding-top: 10px;
+        margin-top: 10px;
+        position: relative;
+        bottom: 10px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 30%;
+    }
+    .ingredient-two-pine {
+        position: relative;
+        top: 10px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+    }
+    .ingredient-three-pine {
+        position: relative;
+        top: 20px;
+        left: 0px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 30%;
+    }
+    .ingredient-one-oran {
+        position: relative;
+        bottom: 0px;
+        top: 80px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 30%;
+    }
+    .ingredient-two-oran {
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        display: flex;
+        border: 1px solid #fff;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 100%;
+        height: 30%;
+    }
+    .footer .footer-box .footer-container-text {
+        left: 20px;
+    }
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 3rem;
+        letter-spacing: 1.6px;
+        color: #fff;
+    }
+    .footer .footer-box .footer-container-text h6 {
+        font-size: 0.8rem;
+        letter-spacing: 1.8px;
+        font-weight: normal;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 451px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 3.1rem;
+        letter-spacing: 3.2px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 3.1rem;
+        letter-spacing: 3.2px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 3.1rem;
+        letter-spacing: 3.2px;
+        color: #fff;
+    }
+    .hero img.orange {
+        width: 55px;
+        height: 50px;
+        left: 50px;
+    }
+    .programastic .progra-buttons img.plus-grape {
+        width: 15px;
+        height: 13px;
+    }
+    .programastic .progra-buttons img.minus-grape {
+        width: 15px;
+        height: 18px;
+    }
+    .creative .creative-buttons img.plus-lemon {
+        width: 15px;
+        height: 13px;
+    }
+    .creative .creative-buttons img.minus-lemon {
+        width: 15px;
+        height: 18px;
+    }
+    .social .social-buttons img.plus-pine {
+        width: 15px;
+        height: 13px;
+    }
+    .social .social-buttons img.minus-pine {
+        width: 15px;
+        height: 18px;
+    }
+    .marketing-orange .marketing-buttons img.plus-orange {
+        width: 15px;
+        height: 13px;
+    }
+    .marketing-orange .marketing-buttons img.minus-orange {
+        width: 15px;
+        height: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 255px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 520px;
+        width: 90px;
+        height: 80px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 790px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 255px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 520px;
+        width: 90px;
+        height: 80px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 780px;
+    }
+    .css {
+        height: 25vh;
+        width: 230%;
+        right: 10px;
+    }
+    .html {
+        height: 25vh;
+        width: 230%;
+    }
+    .xd {
+        height: 25vh;
+        width: 230%;
+    }
+    .button {
+        height: 25vh;
+        width: 230%;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 10px;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 427px) {
+    .try-out-one {
+        grid-area: 2 / 1 / 6 / 13;
+        display: flex;
+        justify-content: space-evenly;
+        height: 28vh;
+        transform: rotate(0deg);
+        width: 1500px;
+        position: relative;
+        right: 10px;
+        align-items: center;
+        background-color: #E4B722;
+    }
+    .try-out-two {
+        grid-area: 3 / 1 / 7 / 13;
+        display: flex;
+        justify-content: space-evenly;
+        height: 28vh;
+        transform: rotate(0deg);
+        width: 1500px;
+        position: relative;
+        right: 10px;
+        align-items: center;
+        background-color: #E4B722;
+    }
+    .ingre-container-text p {
+        font-size: 1rem;
+        letter-spacing: 1.2px;
+        line-height: 1.9rem;
+    }
+    .content-mkt {
+        grid-area: 14 / 2 / 17 / 12;
+        bottom: 168px;
+        left: 0px;
+    }
+    .programastic h6 {
+        font-size: 1rem;
+        letter-spacing: 0.9px;
+    }
+    .programastic h4 {
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .creative h6 {
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.9px;
+    }
+    .creative h4 {
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .social h6 {
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.9px;
+    }
+    .social h4 {
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .marketing-orange h6 {
+        font-size: 1rem;
+        color: #fff;
+        letter-spacing: 0.9px;
+    }
+    .marketing-orange h4 {
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+
+} 
+
+@media only screen and (max-width: 424px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    .hero img.lemon {
+        left: 50px;
+        bottom: 20px;
+        width: 50px;
+        height: 48px;
+    }
+    .hero img.orange {
+        width: 50px;
+        height: 40px;
+        left: 50px;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 255px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 530px;
+        width: 90px;
+        height: 80px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 800px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 255px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 530px;
+        width: 90px;
+        height: 80px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 790px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 420px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 255px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 530px;
+        width: 80px;
+        height: 70px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 800px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 255px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 1.1rem;
+        letter-spacing: 1.2px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 530px;
+        width: 80px;
+        height: 70px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 800px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .wireframes h6 {
+        font-size: 1rem;
+    }
+    .sem h6 {
+        font-size: 1rem;
+    }
+    .content-mkt h6 {
+        font-size: 1rem;
+    }
+    .social-media h6 {
+        font-size: 1rem;
+    }
+    .branding h6 {
+        font-size: 1rem;
+    }
+    .seo h6 {
+        font-size: 1rem;
+    }
+    .java h6 {
+        font-size: 1rem;
+    }
+    .button button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+    .css h2 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+
+    .html h2 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+
+    .xd h2 {
+        font-size: 1.5rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+@media only screen and (max-width: 410px) {
+    header {
+        display: grid;
+        grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+        height: 15vh;
+        background-color: #2D2D32;
+    }
+    header nav {
+        grid-area: 5 / 2 / 7 / 12;
+    }
+
+    header a.logo {
+      grid-area: 1 / 5 / 4 / 9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 2.9rem;
+        letter-spacing: 2.9px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 2.9rem;
+        letter-spacing: 2.9px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 2.9rem;
+        letter-spacing: 2.9px;
+        color: #fff;
+    }
+    .hero img.lemon {
+        left: 40px;
+        bottom: 20px;
+        width: 50px;
+        height: 48px;
+    }
+    .hero img.orange {
+        width: 45px;
+        height: 40px;
+        left: 40px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 540px;
+        width: 80px;
+        height: 70px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 820px;
+    }
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 260px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 540px;
+        width: 80px;
+        height: 70px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 820px;
+    }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 2.7rem;
+        letter-spacing: 2.7px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 2.7rem;
+        letter-spacing: 2.7px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 2.7rem;
+        letter-spacing: 2.7px;
+        color: #fff;
+    }
+    .footer .footer-box .footer-container-text {
+        left: 20px;
+    }
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 2.8rem;
+        letter-spacing: 1.4px;
+        color: #fff;
+    }
+    .footer .footer-box .footer-container-text h6 {
+        font-size: 0.7rem;
+        letter-spacing: 1.5px;
+        font-weight: normal;
+        color: #fff;
+    }
+    .container-form .form-submit form {
+        left: 10px;
+    }
+} 
+
+
+@media only screen and (max-width: 394px) {
+    .html {
+        height: 23vh;
+        width: 230%;
+    }
+    .xd {
+        height: 23vh;
+        width: 230%;
+    }
+    .css {
+        height: 23vh;
+        width: 230%;
+        right: 10px;
+    }
+
+    .button {
+        height: 23vh;
+        width: 230%;
+    }
+    .content-mkt {
+        grid-area: 14 / 2 / 17 / 12;
+        bottom: 180px;
+        left: 0px;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 8px;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 386px) {
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 270px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 550px;
+        width: 80px;
+        height: 70px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 835px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .programastic h6 {
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .programastic h4 {
+        font-size: 0.8rem;
+        color: #fff;
+        letter-spacing: 0.7px;
+    }
+    .creative h6 {
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .creative h4 {
+        font-size: 0.8rem;
+        color: #fff;
+        letter-spacing: 0.7px;
+    }
+    .social h6 {
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .social h4 {
+        font-size: 0.8rem;
+        color: #fff;
+        letter-spacing: 0.7px;
+    }
+    .marketing-orange h6 {
+        font-size: 0.9rem;
+        color: #fff;
+        letter-spacing: 0.8px;
+    }
+    .marketing-orange h4 {
+        font-size: 0.8rem;
+        color: #fff;
+        letter-spacing: 0.7px;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 270px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 550px;
+        width: 80px;
+        height: 70px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 830px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    .html {
+        height: 21vh;
+        width: 225%;
+    }
+    .xd {
+        height: 21vh;
+        width: 225%;
+    }
+    .css {
+        height: 21vh;
+        width: 225%;
+        right: 10px;
+    }
+
+    .button {
+        height: 21vh;
+        width: 225%;
+    }
+
+
+
+} 
+
+
+@media only screen and (max-width: 371px) {
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2.5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2.5px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2.5px;
+        color: #fff;
+    }
+    .hero img.lemon {
+        left: 38px;
+        bottom: 14px;
+        width: 50px;
+        height: 48px;
+    }
+    .hero img.orange {
+        width: 42px;
+        height: 38px;
+        left: 45px;
+    }
+    .hero img.grape {
+        width: 60px;
+        height: 60px;
+        top: 20px;
+        left: -5px;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 265px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 555px;
+        width: 70px;
+        height: 60px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 840px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 265px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 555px;
+        width: 70px;
+        height: 60px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 840px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+    .contact-form .form-call-to-action h4 {
+        padding-left: 3px;
+        font-size: 1.8rem;
+    }
+    .footer .footer-box .footer-container-text h2 {
+        font-size: 2.6rem;
+        letter-spacing: 1.4px;
+        color: #fff;
+    }
+} 
+
+
+
+@media only screen and (max-width: 360px) {
+    .products .develop-grape .develop-grape-about h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+    .products .design-lemon .design-lemon-about h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+    .products .media-pine .media-pine-about h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+    .products .orange-mar .orange-mar-about h2 {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-width: 357px) {
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 270px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 565px;
+        width: 70px;
+        height: 60px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 855px;
+    }
+} 
+
+
+@media only screen and (max-width: 352px) {
+    .wireframes h6 {
+        font-size: 0.9rem;
+    }
+    .sem h6 {
+        font-size: 0.9rem;
+    }
+    .content-mkt h6 {
+        font-size: 0.9rem;
+    }
+    .social-media h6 {
+        font-size: 0.9rem;
+    }
+    .branding h6 {
+        font-size: 0.9rem;
+    }
+    .seo h6 {
+        font-size: 0.9rem;
+    }
+    .java h6 {
+        font-size: 0.9rem;
+    }
+    .button button a {
+        text-decoration: none;
+        color: #000;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+    }
+    .css h2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+
+    .html h2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+
+    .xd h2 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 280px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 570px;
+        width: 70px;
+        height: 60px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 860px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 280px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 570px;
+        width: 70px;
+        height: 60px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 860px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+} 
+
+@media only screen and (max-width: 345px) {
+    header nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.5rem;
+    }
+    .hero .hero-container-text .hero-container-text-one h1 {
+        font-size: 2.2rem;
+        letter-spacing: 2.2px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-two h1 {
+        font-size: 2.2rem;
+        letter-spacing: 2.2px;
+        color: #fff;
+    }
+    
+    .hero .hero-container-text .hero-container-text-three h1 {
+        font-size: 2.2rem;
+        letter-spacing: 2.2px;
+        color: #fff;
+    }
+    .hero img.lemon {
+        left: 30px;
+        bottom: 10px;
+        width: 40px;
+        height: 38px;
+    }
+    .hero img.orange {
+        width: 32px;
+        height: 28px;
+        left: 45px;
+    }
+    .hero img.grape {
+        width: 50px;
+        height: 50px;
+        top: 20px;
+        left: 2px;
+    }
+    .content-mkt {
+        grid-area: 14 / 2 / 17 / 12;
+        bottom: 168px;
+        left: 0px;
+    }
+    .footer .footer-box .footer-container-text {
+        left: 12px;
+    }
+    .ingre-container-text p {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
+    }
+    .first-call-to-action .try-out-one h5.one {
+        position: relative;
+        right: 280px;
+    }
+    .first-call-to-action .try-out-one img.pineapple {
+        position: relative;
+        right: 580px;
+        width: 70px;
+        height: 60px;
+    }
+    .first-call-to-action .try-out-one h5.two {
+        position: relative;
+        right: 870px;
+    }
+    .first-call-to-action .try-out-one h5 {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+
+    .second-call-to-action .try-out-two h5.three {
+        position: relative;
+        right: 285px;
+    }
+    .second-call-to-action .try-out-two img.pineapple-two {
+        position: relative;
+        right: 580px;
+        width: 70px;
+        height: 60px;
+    }
+    .second-call-to-action .try-out-two h5.four {
+        position: relative;
+        right: 870px;
+    }
+    .second-call-to-action .try-out-two h5 {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+    }
+    
+
+} 
+
